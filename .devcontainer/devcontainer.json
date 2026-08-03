@@ -1,16 +1,19 @@
 {
-  "name": "FeatureGraph Development",
-
+  "name": "FeatureGraph Research",
   "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
-
-  "postCreateCommand": "python -m pip install --upgrade pip && python -m pip install -e '.[dev]'",
-
+  "postCreateCommand": "bash .devcontainer/setup.sh",
   "customizations": {
     "vscode": {
       "extensions": [
+        "James-Yu.latex-workshop",
         "ms-python.python",
         "ms-toolsai.jupyter"
-      ]
+      ],
+      "settings": {
+        "latex-workshop.latex.autoBuild.run": "onSave",
+        "latex-workshop.view.pdf.viewer": "tab",
+        "latex-workshop.latex.outDir": "%DIR%/build"
+      }
     }
   }
 }
