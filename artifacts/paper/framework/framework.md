@@ -1,30 +1,22 @@
 ## Framework
 
-An expert practicioner must perform a structured analysis on timeseries data before it can be used in further analysis. If they are able to streamline and automate their analysis process and make it work over many domains, they can create a workflow that can be handed to a downstream consumer.
+An expert typically performs a structured analysis before time-series observations can support further reasoning. They define relevant conditions, identify boundaries, group observations into occurrences, and calculate properties of those occurrences. Much of this work is deterministic, but it is often repeated by every person or computational system that receives the raw data.
 
-The goal of FeatureGraph is to separate out the deterministic work of the analysis that can be standardized and automated before a downstream LLM consumer or analyst accesses it. The goal of this project is to define behavioral objects rigorously enough and with enough generality that they can be reproduced by non-human computation layers and used for downstream processing. The current implementation allows for object-level querying.
+FeatureGraph separates that deterministic work from downstream interpretation. It converts an operational definition of behavior into explicit states, events, bounded objects, measurements, and relationships. The resulting behavioral records can then be handed to an analyst, language model, database, or other computational consumer without requiring that consumer to reconstruct the same analysis from the original observations.
 
-The framework separates this construction into three representational levels:
+The framework organizes this construction into three representational levels:
 
-1. ordered timeseries observations;
-2. sample-level boolean masks that define object boundaries;
-3. time-bounded objects. 
+1. ordered time-series observations;
+2. sample-level Boolean masks that express states or events;
+3. temporally bounded behavioral objects.
 
-Each level preserves information required by the next. Observations provide the measured values. States and events describe the local behavioral condition of each observation and mark changes between conditions. Behavioral objects bind related states and events into identifiable occurrences with explicit boundaries and measurable properties.
+Each level supplies information required by the next. Observations provide measured values. Boolean masks make local conditions and landmarks explicit. Object construction groups related observations into identifiable occurrences with defined boundaries and measurable properties.
 
-This separation is central to the framework. A duration, amplitude, or accumulation is not treated as an isolated feature calculated directly from an arbitrary window of samples. It is treated as a property of a particular behavioral object. The object establishes which observations belong together and therefore supplies the context in which the property is defined. The resulting representation supports both conventional statistical analysis and object-level questions such as how many behaviors occurred, which were incomplete, which persisted unusually long, and how their properties varied across groups or signals.
-
-
+The goal of FeatureGraph is to define these constructions rigorously enough that they can be executed reproducibly by non-human computation and reused across domains. Its primary output is an object-level representation that supports querying and downstream reasoning.
 
 ### Ordered observations
 
-Let an observed signal be an ordered sequence
-
-[
-X = {(t_i, x_i)}_{i=1}^{n},
-]
-
-where (t_i) denotes an ordered position or timestamp and (x_i) denotes the observed value. FeatureGraph requires the observations to be ordered but does not require that the ordering variable represent uniformly spaced physical time. When observations are uniformly sampled, differences in index positions can be interpreted as sample durations and converted to physical time using the sampling interval. When sampling is irregular, duration must instead be calculated from the corresponding timestamps.
+FeatureGraph requires observations to be ordered but does not require that the ordering variable represent uniformly spaced physical time. When observations are uniformly sampled, differences in index positions can be interpreted as sample durations and converted to physical time using the sampling interval. When sampling is irregular, duration must instead be calculated from the corresponding timestamps.
 
 An observation is not itself a behavioral object. It is evidence from which behavioral distinctions may be constructed. A single value generally does not determine whether a signal is rising, falling, oscillating, or accumulating. Such classifications depend on comparisons among observations and on rules chosen for the process under study.
 
