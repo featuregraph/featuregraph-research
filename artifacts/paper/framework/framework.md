@@ -1,18 +1,20 @@
 ## Framework
 
-FeatureGraph is a deterministic framework for transforming ordered observations into explicit behavioral objects. Its purpose is to expose temporal structures that are present in a signal but are not directly represented by the observations themselves. A time series records values at successive positions; it does not ordinarily identify where a behavior begins, how long it persists, when it changes direction, or which observations belong to the same occurrence. These distinctions must be constructed before they can be measured or queried.
+An expert practicioner must perform a structured analysis on timeseries data before it can be used in further analysis. If they are able to streamline and automate their analysis process and make it work over many domains, they can create a workflow that can be handed to a downstream consumer.
+
+The goal of FeatureGraph is to separate out the deterministic work of the analysis that can be standardized and automated before a downstream LLM consumer or analyst accesses it. The goal of this project is to define behavioral objects rigorously enough and with enough generality that they can be reproduced by non-human computation layers and used for downstream processing. The current implementation allows for object-level querying.
 
 The framework separates this construction into three representational levels:
 
-1. ordered observations;
-2. sample-level states and events;
-3. temporally bounded behavioral objects.
+1. ordered timeseries observations;
+2. sample-level boolean masks that define object boundaries;
+3. time-bounded objects. 
 
 Each level preserves information required by the next. Observations provide the measured values. States and events describe the local behavioral condition of each observation and mark changes between conditions. Behavioral objects bind related states and events into identifiable occurrences with explicit boundaries and measurable properties.
 
 This separation is central to the framework. A duration, amplitude, or accumulation is not treated as an isolated feature calculated directly from an arbitrary window of samples. It is treated as a property of a particular behavioral object. The object establishes which observations belong together and therefore supplies the context in which the property is defined. The resulting representation supports both conventional statistical analysis and object-level questions such as how many behaviors occurred, which were incomplete, which persisted unusually long, and how their properties varied across groups or signals.
 
-***The goal of this project is to define behavioral objects rigorously enough and with enough generality that they can be reproduced by non-human computation layers and used for downstream processing. The current implementation allows for object-level querying.***
+
 
 ### Ordered observations
 
