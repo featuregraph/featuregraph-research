@@ -1,0 +1,41 @@
+name: Build paper
+
+on:
+  push:
+    paths:
+      - "artifacts/paper/latex/**"
+      - ".github/workflows/paper.yml"
+  pull_request:
+    paths:
+      - "artifacts/paper/latex/**"
+      - ".github/workflows/paper.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Compile paper
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: main.tex
+          working_directory: artifacts/paper/latex
+          compiler: latexmk
+          args: >-
+            -pdf
+            -file-line-error
+            -halt-on-error
+            -interaction=nonstopmode
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: featuregraph-paper
+          path: artifacts/paper/latex/build/main.pdf
