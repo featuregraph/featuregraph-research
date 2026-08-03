@@ -1,0 +1,47 @@
+\section{Framework}
+
+An expert typically performs a structured analysis before time-series observations can support further reasoning. They define relevant conditions, identify boundaries, group observations into occurrences, and calculate properties of those occurrences. Much of this work is deterministic, but it is often repeated by every person or computational system that receives the raw data.
+
+FeatureGraph separates that deterministic work from downstream interpretation. It converts an operational definition of behavior into explicit states, events, bounded objects, measurements, and relationships. The resulting behavioral records can then be handed to an analyst, language model, database, or other computational consumer without requiring that consumer to reconstruct the same analysis from the original observations.
+
+The framework organizes this construction into three representational levels:
+
+\begin{enumerate}
+    \item ordered time-series observations;
+    \item sample-level Boolean masks that express states or events; and
+    \item temporally bounded behavioral objects.
+\end{enumerate}
+
+Each level supplies information required by the next. Observations provide measured values. Boolean masks make local conditions and landmarks explicit. Object construction groups related observations into identifiable occurrences with defined boundaries and measurable properties.
+
+The goal of FeatureGraph is to define these constructions rigorously enough that they can be executed reproducibly by non-human computation and reused across domains. Its primary output is an object-level representation that supports querying and downstream reasoning.
+
+\subsection{Ordered observations}
+
+FeatureGraph assumes only that observations are ordered. The ordering may represent uniformly sampled physical time, irregular timestamps, or another meaningful sequence. States, events, identities, and objects are not assumed to be present in the observations themselves; they are constructed explicitly from a declared behavioral specification.
+
+A single observation generally does not determine whether a signal is rising, falling, outside an expected range, or part of a repeated cycle. Such distinctions depend on comparisons among observations and on operational choices such as smoothing, comparison lag, tolerance, grouping, or threshold definition. Given the same ordered observations and the same construction specification, FeatureGraph produces the same intermediate masks and behavioral records.
+
+\subsection{Boolean masks}
+
+A detector converts a declared local condition or landmark into a Boolean mask. A state mask indicates that a condition persists at a sample, while an event mask marks a boundary or landmark at a specific sample. Examples include an above-limit state, entry into that state, a directional reversal, or an accepted extremum.
+
+Let $M_i \in \{0,1\}$ denote an event mask over ordered samples. The cumulative identity assignment
+
+\begin{equation}
+I_i = \sum_{k=1}^{i} M_k
+\end{equation}
+
+assigns a new identifier whenever an accepted event occurs. The cumulative count is not merely an event total; it establishes the identity used to group subsequent samples into occurrences.
+
+\subsection{Behavioral objects}
+
+A behavioral object is a bounded occurrence associated with an identifier, a start boundary, an end boundary, and a set of measurements. Once identity and boundaries are explicit, ordinary quantities such as duration, amplitude, period, or overlap can be attached to a particular occurrence rather than calculated over an arbitrary sample window.
+
+The canonical output is a structured behavioral record. Tables and JSON documents preserve object identities, boundaries, measurements, relationships, and construction provenance. A natural-language statement is an optional deterministic rendering of that record and must not introduce facts that are absent from the structured representation.
+
+\subsection{Division of responsibilities}
+
+The framework separates three forms of work. Domain knowledge determines which behavioral distinction is meaningful. Deterministic construction converts that distinction into executable masks, identities, objects, and measurements. Downstream reasoning consumes the resulting records without having to reconstruct the same deterministic analysis from raw observations.
+
+FeatureGraph therefore does not claim to replace domain expertise or infer every meaningful behavior automatically. Its contribution is to externalize repeatable analytical work as explicit computational artifacts that can be inspected, queried, related, and reused.
