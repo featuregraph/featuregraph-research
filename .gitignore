@@ -56,6 +56,20 @@ outputs/
 .prof
 *.prof
 
+# LaTeX build products
+artifacts/paper/latex/build/
+artifacts/paper/latex/*.aux
+artifacts/paper/latex/*.bbl
+artifacts/paper/latex/*.bcf
+artifacts/paper/latex/*.blg
+artifacts/paper/latex/*.fdb_latexmk
+artifacts/paper/latex/*.fls
+artifacts/paper/latex/*.log
+artifacts/paper/latex/*.out
+artifacts/paper/latex/*.run.xml
+artifacts/paper/latex/*.synctex.gz
+artifacts/paper/latex/*.toc
+
 # Locally generated paper evidence
 artifacts/paper/environment.json
 artifacts/paper/run_metadata.json
