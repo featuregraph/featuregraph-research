@@ -18,6 +18,29 @@ were preserved during migration.
 | Learning | How do observations accumulate into estimates and decisions? | [`04_learning/`](04_learning/) |
 | Neural computing | How are functions and positions represented and learned computationally? | [`05_neural_computing/`](05_neural_computing/) |
 | Spatial reasoning | How can local neighborhood relations represent a grid? | [`06_spatial_reasoning/`](06_spatial_reasoning/) |
+| Markov processes | How do state, reward, value, and uncertainty evolve through transitions? | [`07_markov_processes/`](07_markov_processes/) |
+| RL agents | How do policies and value estimates control an environment? | [`08_rl_agents/`](08_rl_agents/) |
+| Function approximation | How do parameterized models learn functions from error? | [`09_function_approximation/`](09_function_approximation/) |
+| Matrix arithmetic | How do array operations become computational building blocks? | [`10_matrix_arithmetic/`](10_matrix_arithmetic/) |
+| FeatureGraph origins | How were features and operators first assembled into a graph? | [`11_feature_graph_origins/`](11_feature_graph_origins/) |
+| EventQL | How can transformations be expressed as a grammar, AST, and interpreter? | [`12_eventql/`](12_eventql/) |
+
+## Project lineage
+
+Six complete precursor repositories are preserved here:
+
+1. [Markov processes](07_markov_processes/) — states, transitions, rewards, values, and bandits.
+2. [RL agents](08_rl_agents/) — policies, Q-learning, SARSA, DQN, and CartPole.
+3. [Function approximation](09_function_approximation/) — weights, loss, gradients, and learned functions.
+4. [Matrix arithmetic](10_matrix_arithmetic/) — NumPy/TensorFlow operations and computational workshops.
+5. [FeatureGraph origins](11_feature_graph_origins/) — an earlier implementation of features, operators, and policy networks.
+6. [EventQL](12_eventql/) — a signal-transformation DSL with grammar, AST, semantics, and runtime.
+
+Together they show a recurring research progression:
+
+```text
+state → transition → value → approximation → operator → graph → language
+```
 
 ## ARC spatial-reasoning path
 
@@ -64,7 +87,8 @@ contract and repeat across problems should move into reusable source code.
 ## Migration policy
 
 - Notebook contents and outputs are preserved.
-- Destination filenames use `snake_case`.
-- The source repository is retained as provenance.
+- The first notebook collection uses `snake_case` destination filenames.
+- Complete repository migrations preserve their internal paths so imports and references remain traceable.
+- Every source repository is retained as provenance.
 - Organization here expresses research relationships; it does not imply that
   every notebook is complete or correct.
