@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eventql"
+version = "0.1.0"
+description = "A DSL for signal transformation and event detection"
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "lark",
+    "torch"
+]
+
+[tool.setuptools.package-data]
+eventql = ["parser/*.lark"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
