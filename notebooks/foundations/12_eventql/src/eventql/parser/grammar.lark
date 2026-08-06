@@ -1,0 +1,17 @@
+start: expr
+
+?expr: expr "&" expr   -> and_expr
+     | expr "|" expr   -> or_expr
+     | expr "==" expr -> eq
+     | expr "<" expr -> lt
+     | expr ">" expr -> gt
+     | "C" "(" expr ")" -> cumsum
+     | "D" "(" expr ")" -> diff
+     | NAME
+     | SIGNED_NUMBER
+     | "(" expr ")"
+
+%import common.CNAME -> NAME
+%import common.SIGNED_NUMBER
+%import common.WS
+%ignore WS
