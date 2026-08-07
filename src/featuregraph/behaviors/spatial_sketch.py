@@ -55,6 +55,7 @@ def partition_blocks(object_grid, output_grid, background_color):
     )
 
     cells["matches_background"] = cells["value"].eq(background_color)
+    # cells['rotated'] = ?
 
     return cells
 
@@ -100,6 +101,7 @@ def build_instruction_layout(blocks, background_color):
         "copy": lambda grid: grid.copy(),
         "reflect_horizontal": np.fliplr,
         "fill_background": lambda grid: np.full_like(grid, background_color)
+        # 'rotate': # rotate 90, 180, 270
     }
 
     if blocks["instruction"].eq("unknown").any():
