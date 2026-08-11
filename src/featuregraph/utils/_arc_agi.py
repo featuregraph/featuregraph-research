@@ -37,7 +37,12 @@ def get_known_transformations(grid):
 
 def get_valid_transformations(grid):
     known_transformations = get_known_transformations(grid)
-    return [t['value'] for t in known_transformations.values() if t['valid']]
+
+    return [
+        {"name": name, **transformation}
+        for name, transformation in known_transformations.items()
+        if transformation["valid"]
+    ]
 
 def get_block_coordinates(block_shape, output_shape):
     grid_height, grid_width = block_shape
