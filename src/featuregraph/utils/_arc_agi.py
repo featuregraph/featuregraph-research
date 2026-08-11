@@ -1,6 +1,166 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+def training_cycle(training_pairs):
+    if len(training_pairs) == 0:
+        raise ValueError(
+            "Training cycle requires at least one pair."
+        )
+
+    shared_candidates = None
+
+    for t in training_pairs:
+        grid = t["grid"]
+        output = t["output"]
+
+        grid_height, grid_width = grid.shape
+        output_height, output_width = output.shape
+
+        if (
+            output_height % grid_height != 0
+            or output_width % grid_width != 0
+        ):
+            raise ValueError(
+                "Output cannot be divided into input-shaped blocks."
+            )
+
+        number_of_block_rows = output_height // grid_height
+        number_of_block_columns = output_width // grid_width
+
+        block_coordinates = get_block_coordinates(
+            grid.shape,
+            output.shape,
+        )
+
+        valid_transformations = get_valid_transformations(grid)
+
+        candidate_transformations = np.array([
+            get_candidate_transformations(
+                transformation["value"],
+                block_coordinates,
+            )
+            for transformation in valid_transformations
+        ]).T
+
+        operator_names = [
+            transformation["name"]
+            for transformation in valid_transformations
+        ]
+
+        pair_candidates = get_instruction_candidates(
+            grid_height,
+            grid_width,
+            output,
+            number_of_block_rows,
+            number_of_block_columns,
+            candidate_transformations,
+            operator_names,
+        )
+
+        if shared_candidates is None:
+            shared_candidates = np.empty(
+                pair_candidates.shape,
+                dtype=object,
+            )
+
+            for index in np.ndindex(pair_candidates.shape):
+                shared_candidates[index] = set(
+                    pair_candidates[index]
+                )
+
+        else:
+            if pair_candidates.shape != shared_candidates.shape:
+                raise ValueError(
+                    "Training pairs produced different "
+                    "instruction-layout shapes."
+                )
+
+            for index in np.ndindex(shared_candidates.shape):
+                shared_candidates[index] &= pair_candidates[index]
+
+    instruction_layout = np.empty(
+        shared_candidates.shape,
+        dtype=object,
+    )
+
+    for index in np.ndindex(shared_candidates.shape):
+        candidates = shared_candidates[index]
+
+        if len(candidates) == 0:
+            raise ValueError(
+                "Training pairs have no shared operator "
+                f"for block {index}."
+            )
+
+        if len(candidates) > 1:
+            raise ValueError(
+                "Multiple operators remain after all "
+                f"training pairs for block {index}: "
+                f"{sorted(candidates)}"
+            )
+
+        instruction_layout[index] = next(iter(candidates))
+
+    return instruction_layout
+
+def test_cycle(test_grid, instruction_layout):
+    grid = test_grid
+
+    grid_height, grid_width = grid.shape
+
+    predicted_height = instruction_layout.shape[0] * grid_height
+    predicted_width = instruction_layout.shape[1] * grid_width
+    predicted_shape = (predicted_height, predicted_width)
+
+    block_coordinates = get_block_coordinates(
+        grid.shape,
+        predicted_shape,
+    )
+
+    valid_transformations = get_valid_transformations(grid)
+
+    name_to_column = {
+        transformation["name"]: column
+        for column, transformation in enumerate(valid_transformations)
+    }
+
+    required_names = set(instruction_layout.ravel())
+    available_names = set(name_to_column)
+    missing_names = required_names - available_names
+
+    if missing_names:
+        raise ValueError(
+            f"Test grid does not support operators: "
+            f"{sorted(missing_names)}"
+        )
+
+    candidate_transformations = np.array([
+        get_candidate_transformations(
+            transformation["value"],
+            block_coordinates,
+        )
+        for transformation in valid_transformations
+    ]).T
+
+    numeric_instruction_layout = np.array([
+        [name_to_column[name] for name in row]
+        for row in instruction_layout
+    ])
+
+    cell_indices = np.arange(candidate_transformations.shape[0])
+
+    cell_instructions = numeric_instruction_layout[
+        block_coordinates[:, 0],
+        block_coordinates[:, 1],
+    ]
+
+    prediction = candidate_transformations[
+        cell_indices,
+        cell_instructions,
+    ].reshape(predicted_shape)
+
+    return prediction
+
 def get_known_transformations(grid):
     return {
         'copy': {
@@ -62,12 +222,58 @@ def get_output_cells(output):
 def get_candidate_transformations(grid, block_coordinates):
     return grid[block_coordinates[:,2], block_coordinates[:,3]]
 
-def get_instruction_layout(grid_height, grid_width, output, number_of_block_rows, number_of_block_columns, candidate_transformations):
+def get_instruction_candidates(
+    grid_height,
+    grid_width,
+    output,
+    number_of_block_rows,
+    number_of_block_columns,
+    candidate_transformations,
+    operator_names,
+):
     output_cells = get_output_cells(output)
     number_of_operators = candidate_transformations.shape[1]
-    cell_matches = output_cells[:, 2:3] == candidate_transformations
-    block_matches = cell_matches.reshape(number_of_block_rows, grid_height, number_of_block_columns, grid_width, number_of_operators).all(axis=(1,3))
-    return np.argmax(block_matches, axis=2)
+
+    cell_matches = (
+        output_cells[:, 2:3] == candidate_transformations
+    )
+
+    block_matches = cell_matches.reshape(
+        number_of_block_rows,
+        grid_height,
+        number_of_block_columns,
+        grid_width,
+        number_of_operators,
+    ).all(axis=(1, 3))
+
+    instruction_candidates = np.empty(
+        (number_of_block_rows, number_of_block_columns),
+        dtype=object,
+    )
+
+    for block_row in range(number_of_block_rows):
+        for block_column in range(number_of_block_columns):
+            matching_positions = np.flatnonzero(
+                block_matches[block_row, block_column]
+            )
+
+            matching_names = {
+                operator_names[position]
+                for position in matching_positions
+            }
+
+            if not matching_names:
+                raise ValueError(
+                    "No operator matched block "
+                    f"({block_row}, {block_column})."
+                )
+
+            instruction_candidates[
+                block_row,
+                block_column,
+            ] = matching_names
+
+    return instruction_candidates
 
 def plot_arc_agi(grid, output=None, manual_output=None):
     fig, axes = plt.subplots(1, 3, figsize=(10, 4))
