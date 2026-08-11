@@ -6,7 +6,7 @@ from .behaviors import oscillation, accumulation, spatial_sketch
 from . import datasets
 
 from .utils._plot import plot
-from .utils._arc_agi import get_block_coordinates, get_output_cells, get_candidate_transformations, get_instruction_layout
+from .utils._arc_agi import get_block_coordinates, get_output_cells, get_valid_transformations, get_candidate_transformations, get_instruction_layout, plot_arc_agi
 
 __version__ = "0.1.0a1"
 
@@ -18,6 +18,8 @@ __all__ = [
     "plot",
     "get_block_coordinates",
     "get_output_cells",
+    "get_valid_transformations",
     "get_candidate_transformations",
-    "get_instruction_layout"
+    "get_instruction_layout",
+    "plot_arc_agi"
 ]

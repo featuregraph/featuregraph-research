@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
 def get_block_coordinates(block_shape, output_shape):
     input_height, input_width = block_shape
@@ -15,6 +16,13 @@ def get_output_cells(output):
     row, column = np.indices(output.shape) 
     return np.array([row.ravel(), column.ravel(), output.ravel()]).T
 
+def get_valid_transformations(candidate_transformations, input_shape):
+    return_list = []
+    for c in candidate_transformations:
+        if c.shape == input_shape:
+            return_list.append(c)
+    return return_list
+
 def get_candidate_transformations(input, block_coordinates):
     return input[block_coordinates[:,2], block_coordinates[:,3]]
 
@@ -24,3 +32,23 @@ def get_instruction_layout(input_height, input_width, output, number_of_block_ro
     cell_matches = output_cells[:, 2:3] == candidate_transformations
     block_matches = cell_matches.reshape(number_of_block_rows, input_height, number_of_block_columns, input_width, number_of_operators).all(axis=(1,3))
     return np.argmax(block_matches, axis=2)
+
+def plot_arc_agi(input, output=None, manual_output=None):
+    fig, axes = plt.subplots(1, 3, figsize=(10, 4))
+    axes[0].imshow(input, vmin=0, vmax=9)
+    axes[0].set_title("Input object")
+
+    if output is not None:
+        axes[1].imshow(output, vmin=0, vmax=9)
+        axes[1].set_title("Expected output")
+
+    if manual_output is not None:
+        axes[2].imshow(manual_output, vmin=0, vmax=9)
+        axes[2].set_title("Reconstructed output")
+
+    for ax in axes:
+        ax.set_xticks([])
+        ax.set_yticks([])
+
+    plt.tight_layout()
+    plt.show()
