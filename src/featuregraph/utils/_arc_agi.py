@@ -1,5 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from pathlib import Path
+import json
 
 def training_cycle(training_pairs):
     if len(training_pairs) == 0:
@@ -294,3 +296,92 @@ def plot_arc_agi(grid, output=None, manual_output=None):
 
     plt.tight_layout()
     plt.show()
+
+def get_training_pairs(task):
+    return [
+        {
+            "grid": np.asarray(pair["input"], dtype=int),
+            "output": np.asarray(pair["output"], dtype=int),
+        }
+        for pair in task["train"]
+    ]
+
+def get_test_grids(task):
+    return [
+        np.asarray(pair["input"], dtype=int)
+        for pair in task["test"]
+    ]
+
+def solve_task(task):
+    training_pairs = get_training_pairs(task)
+    instruction_layout = training_cycle(training_pairs)
+
+    test_grids = get_test_grids(task)
+
+    return [
+        test_cycle(test_grid, instruction_layout)
+        for test_grid in test_grids
+    ]
+
+def predictions_to_lists(predictions):
+    return [
+        prediction.tolist()
+        for prediction in predictions
+    ]
+
+def predictions_to_attempts(predictions):
+    return [
+        {
+            "attempt_1": prediction.tolist(),
+            "attempt_2": prediction.tolist(),
+        }
+        for prediction in predictions
+    ]
+
+def fallback_predictions(task):
+    return [
+        np.asarray(pair["input"], dtype=int)
+        for pair in task["test"]
+    ]
+
+def solve_challenges(challenges):
+    submission = {}
+    failures = {}
+
+    for task_id, task in challenges.items():
+        try:
+            predictions = solve_task(task)
+        except ValueError as error:
+            predictions = fallback_predictions(task)
+            failures[task_id] = str(error)
+
+        submission[task_id] = predictions_to_attempts(predictions)
+
+    return submission, failures
+
+def write_submission(submission, path):
+    path = Path(path)
+
+    with path.open("w", encoding="utf-8") as file:
+        json.dump(submission, file)
+
+    return path
+
+def load_challenges(path):
+    path = Path(path)
+
+    with path.open(encoding="utf-8") as file:
+        return json.load(file)
+
+def run_harness(challenges_path, submission_path):
+    challenges = load_challenges(challenges_path)
+    submission, failures = solve_challenges(challenges)
+    written_path = write_submission(submission, submission_path)
+
+    return {
+        "submission_path": written_path,
+        "number_of_tasks": len(challenges),
+        "number_supported": len(challenges) - len(failures),
+        "number_fallback": len(failures),
+        "failures": failures,
+    }
