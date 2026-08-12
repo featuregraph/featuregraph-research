@@ -12,6 +12,8 @@ from featuregraph.utils._arc_agi import (
     predictions_to_lists,
     run_harness,
     solve_challenges,
+    solve_fixed_layout_task,
+    solve_state_layout_task,
     solve_task,
     write_submission,
 )
@@ -155,10 +157,10 @@ def test_solve_challenges_isolates_unsupported_tasks():
     assert set(submission) == set(challenges)
     assert set(failures) == {"unsupported"}
 
-    assert (
-        failures["unsupported"]
-        == "No operator matched block (0, 0)."
-    )
+    failure = failures["unsupported"]
+    assert failure.startswith("No solver family matched the task.")
+    assert "fixed: No operator matched block (0, 0)." in failure
+    assert "state: No operator matched block (0, 0)." in failure
 
     assert submission["supported"][0]["attempt_1"] == (
         expected_prediction().tolist()
@@ -237,19 +239,25 @@ def test_run_harness_reports_supported_and_fallback_counts(tmp_path):
     assert set(submission) == set(challenges)
 
 
-def test_official_arc_task_00576224_exact_match():
+def load_official_arc_task(task_id):
     repository_root = Path(__file__).resolve().parents[1]
-    task_path = repository_root / "data" / "arc-agi-2" / "00576224.json"
+    task_path = (
+        repository_root
+        / "tests"
+        / "fixtures"
+        / "arc-agi-2"
+        / f"{task_id}.json"
+    )
 
     assert task_path.exists(), (
         f"Official ARC integration fixture is missing: {task_path}"
     )
 
     with task_path.open(encoding="utf-8") as file:
-        task = json.load(file)
+        return json.load(file)
 
-    predictions = solve_task(task)
 
+def assert_test_predictions_exact(task, predictions):
     assert len(predictions) == len(task["test"])
 
     for prediction, test_pair in zip(
@@ -263,3 +271,26 @@ def test_official_arc_task_00576224_exact_match():
             prediction,
             np.asarray(test_pair["output"], dtype=int),
         )
+
+
+def test_official_arc_task_00576224_fixed_layout_exact_match():
+    task = load_official_arc_task("00576224")
+
+    predictions = solve_fixed_layout_task(task)
+
+    assert_test_predictions_exact(task, predictions)
+
+
+def test_official_arc_task_007bbfb7_state_layout_exact_match():
+    task = load_official_arc_task("007bbfb7")
+
+    predictions = solve_state_layout_task(task)
+
+    assert_test_predictions_exact(task, predictions)
+
+
+def test_solver_dispatches_both_official_layout_families():
+    for task_id in ("00576224", "007bbfb7"):
+        task = load_official_arc_task(task_id)
+
+        assert_test_predictions_exact(task, solve_task(task))
