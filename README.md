@@ -78,7 +78,7 @@ long_oscillations = (
 - [Reproducibility guide](docs/reproducibility.md)
 - [Release `v0.1.0b1`](https://github.com/featuregraph/featuregraph/releases/tag/v0.1.0b1)
 - [Archived research record](https://doi.org/10.5281/zenodo.21984186)
-- [Project website](https://featuregraph.ai)
+- [Project website](https://featuregraph.ai/?utm_source=github&utm_medium=referral&utm_campaign=featuregraph_research_repository)
 
 ## Reproduce the research artifacts
 
