@@ -45,5 +45,5 @@ reproducibility
 - [Source repository](https://github.com/featuregraph/featuregraph)
 - [Released alpha](https://github.com/featuregraph/featuregraph/releases/tag/v0.1.0a1)
 - [Alpha demonstration notebook](https://github.com/featuregraph/featuregraph/blob/v0.1.0a1/notebooks/demo_notebook.ipynb)
-- [FeatureGraph website](https://featuregraph.ai)
+- [FeatureGraph website](https://featuregraph.ai/?utm_source=github&utm_medium=referral&utm_campaign=featuregraph_research_docs)
 - [Archived research record](https://doi.org/10.5281/zenodo.21535661)
