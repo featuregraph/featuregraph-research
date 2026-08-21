@@ -1,0 +1,92 @@
+path,disposition,reason,bytes
+01_linear_algebra/linear_algebra_plotting.ipynb,promote,array visualization,37771
+01_linear_algebra/matrix_kronecker_product.ipynb,promote,block composition,5142
+01_linear_algebra/pascals_matrix.ipynb,reference,supporting mathematical or implementation record,10880
+01_linear_algebra/reflection_matrices.ipynb,promote,spatial reflection,11975
+01_linear_algebra/rotation_matrices.ipynb,promote,spatial rotation,10882
+01_linear_algebra/solve_nullspace.ipynb,reference,supporting mathematical or implementation record,1750
+02_numerical_methods/taylor_approximation.ipynb,reference,supporting mathematical or implementation record,6408
+03_probability/absorbing_markov_chain.ipynb,reference,supporting mathematical or implementation record,2585
+03_probability/log_probabilities.ipynb,reference,supporting mathematical or implementation record,2431
+03_probability/probability_distributions.ipynb,reference,supporting mathematical or implementation record,2968
+03_probability/steady_state_markov_chain.ipynb,reference,supporting mathematical or implementation record,2410
+04_learning/multi_armed_bandit.ipynb,reference,supporting mathematical or implementation record,4795
+04_learning/numpy_auc.ipynb,promote,vectorized accumulation,30570
+05_neural_computing/cp_pytorch.ipynb,archive,"superseded, duplicate, incomplete, or dependency-heavy",15092
+05_neural_computing/pytorch.ipynb,archive,"superseded, duplicate, incomplete, or dependency-heavy",1390
+05_neural_computing/sin_x_pytorch.ipynb,archive,"superseded, duplicate, incomplete, or dependency-heavy",3203
+05_neural_computing/sin_x_results_verification.ipynb,archive,"superseded, duplicate, incomplete, or dependency-heavy",4353
+06_spatial_reasoning/neighbors_matrix.ipynb,promote,local spatial relations,1507
+07_markov_processes/absorbing_markov_chain.py,reference,supporting mathematical or implementation record,1074
+07_markov_processes/keras test.ipynb,archive,"superseded, duplicate, incomplete, or dependency-heavy",43770
+07_markov_processes/multi-armed bandit.ipynb,reference,supporting mathematical or implementation record,2011
+07_markov_processes/q table.ipynb,reference,supporting mathematical or implementation record,4366
+07_markov_processes/random walk gridworld.ipynb,reference,supporting mathematical or implementation record,3647
+07_markov_processes/random walk mrp.ipynb,promote,state-value iteration,3963
+07_markov_processes/rl-tests/keras test 2.ipynb,archive,"superseded, duplicate, incomplete, or dependency-heavy",988689
+07_markov_processes/rl-tests/keras test.ipynb,archive,"superseded, duplicate, incomplete, or dependency-heavy",8324
+07_markov_processes/rl-tests/np tf exercises.ipynb,archive,"superseded, duplicate, incomplete, or dependency-heavy",1276
+07_markov_processes/rl-tests/q table conversion.ipynb,archive,"superseded, duplicate, incomplete, or dependency-heavy",6699
+07_markov_processes/rl-tests/q table.ipynb,archive,"superseded, duplicate, incomplete, or dependency-heavy",4444
+07_markov_processes/thompson-sampling/Multi-armed bandits and Thompson sampling.md,reference,supporting mathematical or implementation record,2446
+07_markov_processes/thompson-sampling/README.md,reference,supporting mathematical or implementation record,86
+07_markov_processes/thompson-sampling/Thompson sampling.ipynb,reference,supporting mathematical or implementation record,201670
+07_markov_processes/thompson-sampling/thompson-sampling.py,reference,supporting mathematical or implementation record,576
+08_rl_agents/CartPole visualizations 1.ipynb,promote,transition inspection,207868
+08_rl_agents/README.md,archive,"superseded, duplicate, incomplete, or dependency-heavy",1252
+08_rl_agents/archive/README.md,archive,"superseded, duplicate, incomplete, or dependency-heavy",1900
+08_rl_agents/archive/legacy/agents.py,archive,"superseded, duplicate, incomplete, or dependency-heavy",2059
+08_rl_agents/archive/legacy/cp_agent.py,archive,"superseded, duplicate, incomplete, or dependency-heavy",3453
+08_rl_agents/archive/legacy/dqn.py,archive,"superseded, duplicate, incomplete, or dependency-heavy",1014
+08_rl_agents/archive/legacy/q-learning.py,archive,"superseded, duplicate, incomplete, or dependency-heavy",759
+08_rl_agents/archive/legacy/sarsa.py,archive,"superseded, duplicate, incomplete, or dependency-heavy",926
+08_rl_agents/archive/notebooks/keras classifiers 2.ipynb,archive,"superseded, duplicate, incomplete, or dependency-heavy",517111
+08_rl_agents/archive/notebooks/keras classifiers.ipynb,archive,"superseded, duplicate, incomplete, or dependency-heavy",6920
+08_rl_agents/archive/notebooks/visualizations.ipynb,archive,"superseded, duplicate, incomplete, or dependency-heavy",184049
+08_rl_agents/cartpole_solution.ipynb,reference,supporting mathematical or implementation record,13704
+08_rl_agents/random walk.ipynb,promote,explicit state transitions,3486
+08_rl_agents/sample state space.ipynb,promote,state/action representation,93063
+08_rl_agents/tutorial/README.md,reference,supporting mathematical or implementation record,2945
+09_function_approximation/README.md,reference,supporting mathematical or implementation record,291
+09_function_approximation/Using Gradient Tape to update trainable layer weights.ipynb,reference,supporting mathematical or implementation record,8794
+09_function_approximation/function_approximation.ipynb,reference,supporting mathematical or implementation record,95081
+09_function_approximation/function_approximation.py,reference,supporting mathematical or implementation record,1221
+09_function_approximation/linear_regression.ipynb,reference,supporting mathematical or implementation record,51222
+09_function_approximation/linear_regression.py,reference,supporting mathematical or implementation record,869
+09_function_approximation/pytorch.ipynb,reference,supporting mathematical or implementation record,8563
+10_matrix_arithmetic/README.md,remove,empty or placeholder documentation,21
+10_matrix_arithmetic/bit-transmission.py,reference,supporting mathematical or implementation record,1933
+10_matrix_arithmetic/boolean-array.py,reference,supporting mathematical or implementation record,787
+10_matrix_arithmetic/cartpole with layers.ipynb,archive,"superseded, duplicate, incomplete, or dependency-heavy",7114
+10_matrix_arithmetic/cartpole workshop.ipynb,archive,"superseded, duplicate, incomplete, or dependency-heavy",47857
+10_matrix_arithmetic/keras workshop.ipynb,archive,"superseded, duplicate, incomplete, or dependency-heavy",510969
+10_matrix_arithmetic/linear functions workshop.ipynb,reference,supporting mathematical or implementation record,57908
+10_matrix_arithmetic/numpy workshop.ipynb,promote,boolean array operations,21379
+10_matrix_arithmetic/tensorflow workshop.ipynb,archive,"superseded, duplicate, incomplete, or dependency-heavy",6649
+11_feature_graph_origins/README.md,remove,empty or placeholder documentation,0
+11_feature_graph_origins/cp_example.py,reference,supporting mathematical or implementation record,2052
+11_feature_graph_origins/example.py,reference,supporting mathematical or implementation record,496
+11_feature_graph_origins/pyproject.toml,archive,"superseded, duplicate, incomplete, or dependency-heavy",363
+11_feature_graph_origins/src/__init__.py,remove,empty historical package marker,0
+11_feature_graph_origins/src/feature_graph/__init__.py,remove,empty historical package marker,0
+11_feature_graph_origins/src/feature_graph/cp_project_constants.py,archive,"superseded, duplicate, incomplete, or dependency-heavy",1856
+11_feature_graph_origins/src/feature_graph/features.py,promote,operator-parent provenance,2016
+11_feature_graph_origins/src/feature_graph/operators.py,promote,enter/exit/between operators,482
+11_feature_graph_origins/src/feature_graph/project_constants.py,reference,supporting mathematical or implementation record,758
+11_feature_graph_origins/src/policy_net/policy_net.py,archive,"superseded, duplicate, incomplete, or dependency-heavy",666
+12_eventql/README.md,promote,declarative operator model,2847
+12_eventql/pyproject.toml,reference,supporting mathematical or implementation record,445
+12_eventql/src/eventql/__init__.py,reference,supporting mathematical or implementation record,211
+12_eventql/src/eventql/ast/nodes.py,promote,typed expression nodes,648
+12_eventql/src/eventql/compiler/__init__.py,remove,empty historical package marker,0
+12_eventql/src/eventql/compiler/compiler.py,promote,compile/evaluate separation,309
+12_eventql/src/eventql/compiler/expression.py,promote,compiled expression record,215
+12_eventql/src/eventql/parser/__init__.py,remove,empty historical package marker,0
+12_eventql/src/eventql/parser/grammar.lark,promote,expression grammar,371
+12_eventql/src/eventql/parser/parser.py,reference,supporting mathematical or implementation record,203
+12_eventql/src/eventql/parser/transformer.py,promote,syntax-to-AST mapping,751
+12_eventql/src/eventql/runtime/__init__.py,remove,empty historical package marker,0
+12_eventql/src/eventql/runtime/interpreter.py,promote,deterministic evaluation,1004
+12_eventql/src/eventql/semantics/__init__.py,remove,empty historical package marker,0
+12_eventql/src/eventql/semantics/infer_type.py,promote,representation typing,1254
+12_eventql/src/eventql/semantics/types.py,promote,representation types,117
