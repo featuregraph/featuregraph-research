@@ -574,9 +574,67 @@ def write_submission(submission, path):
     return path
 
 
+def validate_submission(challenges, submission):
+    """Validate the ARC Prize task, attempt, and grid contracts."""
+    challenge_ids = set(challenges)
+    submission_ids = set(submission)
+    if submission_ids != challenge_ids:
+        missing = sorted(challenge_ids - submission_ids)
+        extra = sorted(submission_ids - challenge_ids)
+        raise ValueError(
+            "Submission task IDs do not match challenges. "
+            f"Missing: {missing}; extra: {extra}."
+        )
+
+    for task_id, task in challenges.items():
+        attempts = submission[task_id]
+        if len(attempts) != len(task["test"]):
+            raise ValueError(
+                f"Task {task_id!r} has {len(task['test'])} test inputs "
+                f"but {len(attempts)} submitted outputs."
+            )
+
+        for test_index, attempt_pair in enumerate(attempts):
+            required_attempts = {"attempt_1", "attempt_2"}
+            if set(attempt_pair) != required_attempts:
+                raise ValueError(
+                    f"Task {task_id!r} test {test_index} must contain "
+                    "exactly attempt_1 and attempt_2."
+                )
+            for attempt_name, grid in attempt_pair.items():
+                _validate_submission_grid(
+                    grid,
+                    task_id=task_id,
+                    test_index=test_index,
+                    attempt_name=attempt_name,
+                )
+
+
+def _validate_submission_grid(
+    grid,
+    *,
+    task_id,
+    test_index,
+    attempt_name,
+):
+    array = np.asarray(grid)
+    context = (
+        f"Task {task_id!r} test {test_index} {attempt_name}"
+    )
+    if array.ndim != 2 or array.size == 0:
+        raise ValueError(f"{context} must be a nonempty 2D grid.")
+    if not 1 <= array.shape[0] <= 30 or not 1 <= array.shape[1] <= 30:
+        raise ValueError(f"{context} has invalid shape {array.shape}.")
+    if not np.issubdtype(array.dtype, np.integer):
+        raise ValueError(f"{context} must contain integers.")
+    if np.any((array < 0) | (array > 9)):
+        raise ValueError(f"{context} contains a value outside 0 through 9.")
+
+
 def run_harness(challenges_path, submission_path):
     challenges = load_challenges(challenges_path)
     submission, failures = solve_challenges(challenges)
+    validate_submission(challenges, submission)
     written_path = write_submission(submission, submission_path)
     return {
         "submission_path": written_path,
