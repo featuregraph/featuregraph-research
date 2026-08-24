@@ -4,18 +4,25 @@ from pathlib import Path
 import numpy as np
 
 from featuregraph.utils._arc_agi import (
+    derive_predicate_instruction_layout,
     fallback_predictions,
+    get_known_predicates,
     get_test_grids,
     get_training_pairs,
     load_challenges,
+    predicate_training_cycle,
     predictions_to_attempts,
     predictions_to_lists,
     run_harness,
     solve_challenges,
     solve_fixed_layout_task,
+    solve_predicate_layout_task,
     solve_state_layout_task,
     solve_task,
     write_submission,
+)
+from featuregraph.utils._arc_agi import (
+    test_cycle as run_test_cycle,
 )
 
 
@@ -291,6 +298,99 @@ def test_official_arc_task_007bbfb7_state_layout_exact_match():
 
 def test_solver_dispatches_both_official_layout_families():
     for task_id in ("00576224", "007bbfb7"):
+        task = load_official_arc_task(task_id)
+
+        assert_test_predictions_exact(task, solve_task(task))
+
+
+def test_official_predicate_layout_rules_are_inferred_without_task_ids():
+    expected_rules = {
+        "007bbfb7": {
+            "predicate": "nonzero",
+            "when_false": "background",
+            "when_true": "copy",
+        },
+        "5b6cbef5": {
+            "predicate": "nonzero",
+            "when_false": "background",
+            "when_true": "copy",
+        },
+        "27f8ce4f": {
+            "predicate": "modal_color",
+            "when_false": "background",
+            "when_true": "copy",
+        },
+        "c3e719e8": {
+            "predicate": "modal_color",
+            "when_false": "background",
+            "when_true": "copy",
+        },
+        "48f8583b": {
+            "predicate": "minority_color",
+            "when_false": "background",
+            "when_true": "copy",
+        },
+    }
+
+    for task_id, expected_rule in expected_rules.items():
+        task = load_official_arc_task(task_id)
+        rule = predicate_training_cycle(get_training_pairs(task))
+
+        assert rule == expected_rule
+        assert_test_predictions_exact(
+            task,
+            solve_predicate_layout_task(task),
+        )
+
+
+def test_frequency_predicates_are_undefined_when_the_extreme_is_tied():
+    grid = np.array([[1, 2], [1, 2]])
+    predicates = get_known_predicates(grid)
+
+    assert not predicates["minority_color"]["valid"]
+    assert not predicates["modal_color"]["valid"]
+
+
+def test_official_predicate_layout_rules_pass_leave_one_out():
+    task_ids = (
+        "007bbfb7",
+        "5b6cbef5",
+        "27f8ce4f",
+        "c3e719e8",
+        "48f8583b",
+    )
+
+    for task_id in task_ids:
+        task = load_official_arc_task(task_id)
+        training_pairs = get_training_pairs(task)
+
+        for held_out_index, held_out_pair in enumerate(training_pairs):
+            retained_pairs = [
+                pair
+                for index, pair in enumerate(training_pairs)
+                if index != held_out_index
+            ]
+            rule = predicate_training_cycle(retained_pairs)
+            instruction_layout = derive_predicate_instruction_layout(
+                held_out_pair["grid"],
+                rule,
+            )
+            prediction = run_test_cycle(
+                held_out_pair["grid"],
+                instruction_layout,
+            )
+
+            assert np.array_equal(prediction, held_out_pair["output"])
+
+
+def test_solver_dispatches_all_official_predicate_layout_tasks():
+    for task_id in (
+        "007bbfb7",
+        "5b6cbef5",
+        "27f8ce4f",
+        "c3e719e8",
+        "48f8583b",
+    ):
         task = load_official_arc_task(task_id)
 
         assert_test_predictions_exact(task, solve_task(task))

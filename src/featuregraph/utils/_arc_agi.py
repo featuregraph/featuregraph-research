@@ -71,6 +71,84 @@ def state_training_cycle(training_pairs, background_color=0):
     return state_to_operator
 
 
+def predicate_training_cycle(training_pairs):
+    """Infer a selector predicate and its selected-cell operator."""
+    _validate_training_pairs(training_pairs)
+    predicate_candidates = None
+    viable_predicates = None
+
+    for training_pair in training_pairs:
+        grid = np.asarray(training_pair["grid"])
+        _, pair_candidates = _get_pair_evidence(training_pair)
+        if grid.shape != pair_candidates.shape:
+            raise ValueError(
+                "Predicate-derived layouts require the output block layout "
+                "to have the same shape as the input grid."
+            )
+
+        known_predicates = get_known_predicates(grid)
+        if predicate_candidates is None:
+            predicate_candidates = {
+                name: {False: None, True: None}
+                for name in known_predicates
+            }
+            viable_predicates = set(known_predicates)
+
+        for name, predicate in known_predicates.items():
+            if name not in viable_predicates:
+                continue
+            if not predicate["valid"]:
+                viable_predicates.remove(name)
+                continue
+
+            mask = predicate["value"]
+            for state in (False, True):
+                for candidates in pair_candidates[mask == state]:
+                    shared = predicate_candidates[name][state]
+                    if shared is None:
+                        predicate_candidates[name][state] = set(candidates)
+                    else:
+                        shared &= candidates
+
+    survivors = []
+    for name in viable_predicates:
+        state_candidates = predicate_candidates[name]
+        false_candidates = state_candidates[False]
+        true_candidates = state_candidates[True]
+        if (
+            false_candidates is not None
+            and "background" in false_candidates
+            and true_candidates is not None
+            and len(true_candidates - {"background"}) > 0
+        ):
+            survivors.append(name)
+
+    if len(survivors) == 0:
+        raise ValueError(
+            "No predicate produced a consistent state-to-operator mapping."
+        )
+    if len(survivors) > 1:
+        raise ValueError(
+            "Multiple predicates remain after all training pairs: "
+            f"{sorted(survivors)}"
+        )
+
+    predicate_name = survivors[0]
+    state_candidates = predicate_candidates[predicate_name]
+    selected_candidates = state_candidates[True] - {"background"}
+    if len(selected_candidates) > 1:
+        raise ValueError(
+            "Multiple selected-cell operators remain for predicate "
+            f"{predicate_name!r}: {sorted(selected_candidates)}"
+        )
+
+    return {
+        "predicate": predicate_name,
+        "when_false": "background",
+        "when_true": next(iter(selected_candidates)),
+    }
+
+
 def training_cycle(training_pairs):
     """Backward-compatible name for fixed-layout inference."""
     return fixed_layout_training_cycle(training_pairs)
@@ -100,6 +178,34 @@ def derive_state_instruction_layout(
         states == "background",
         state_to_operator["background"],
         state_to_operator["foreground"],
+    )
+
+
+def derive_predicate_instruction_layout(grid, predicate_rule):
+    """Evaluate a learned predicate rule for one input grid."""
+    required_fields = {"predicate", "when_false", "when_true"}
+    missing_fields = required_fields - set(predicate_rule)
+    if missing_fields:
+        raise ValueError(
+            "Predicate rule is missing fields: "
+            f"{sorted(missing_fields)}"
+        )
+
+    known_predicates = get_known_predicates(np.asarray(grid))
+    predicate_name = predicate_rule["predicate"]
+    if predicate_name not in known_predicates:
+        raise ValueError(f"Unknown predicate: {predicate_name!r}.")
+
+    predicate = known_predicates[predicate_name]
+    if not predicate["valid"]:
+        raise ValueError(
+            f"Predicate {predicate_name!r} is undefined for the test grid."
+        )
+
+    return np.where(
+        predicate["value"],
+        predicate_rule["when_true"],
+        predicate_rule["when_false"],
     )
 
 
@@ -173,6 +279,19 @@ def solve_state_layout_task(task, background_color=0):
     return predictions
 
 
+def solve_predicate_layout_task(task):
+    training_pairs = get_training_pairs(task)
+    predicate_rule = predicate_training_cycle(training_pairs)
+    predictions = []
+    for test_grid in get_test_grids(task):
+        instruction_layout = derive_predicate_instruction_layout(
+            test_grid,
+            predicate_rule,
+        )
+        predictions.append(test_cycle(test_grid, instruction_layout))
+    return predictions
+
+
 def solve_task(task, background_color=0):
     """Try the supported solver families in deterministic order."""
     failures = []
@@ -185,6 +304,7 @@ def solve_task(task, background_color=0):
                 background_color=background_color,
             ),
         ),
+        ("predicate", lambda: solve_predicate_layout_task(task)),
     )
     for solver_name, solve in solvers:
         try:
@@ -257,6 +377,34 @@ def _resolve_candidate_layout(shared_candidates):
 def _validate_training_pairs(training_pairs):
     if len(training_pairs) == 0:
         raise ValueError("Training cycle requires at least one pair.")
+
+
+def _unique_frequency_mask(grid, reducer):
+    colors, counts = np.unique(grid, return_counts=True)
+    reduced_count = reducer(counts)
+    matching_colors = colors[counts == reduced_count]
+    if len(matching_colors) != 1:
+        return None
+    return grid == matching_colors.item()
+
+
+def get_known_predicates(grid):
+    """Return general cell predicates that may define a block layout."""
+    grid = np.asarray(grid)
+    predicates = {
+        "nonzero": grid != 0,
+        "minority_color": _unique_frequency_mask(grid, np.min),
+        "modal_color": _unique_frequency_mask(grid, np.max),
+        "smallest_numeric_color": grid == np.min(grid),
+    }
+    return {
+        name: {
+            "value": value,
+            "shape": grid.shape,
+            "valid": value is not None,
+        }
+        for name, value in predicates.items()
+    }
 
 
 def get_known_transformations(grid):
