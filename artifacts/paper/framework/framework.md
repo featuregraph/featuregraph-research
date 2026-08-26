@@ -2,7 +2,7 @@
 
 An expert typically performs a structured analysis before time-series observations can support further reasoning. They define relevant conditions, identify boundaries, group observations into occurrences, and calculate properties of those occurrences. Much of this work is deterministic, but it is often repeated by every person or computational system that receives the raw data.
 
-FeatureGraph separates that deterministic work from downstream interpretation. It converts an operational definition of behavior into explicit states, events, bounded objects, measurements, and relationships. The resulting behavioral records can then be handed to an analyst, language model, database, or other computational consumer without requiring that consumer to reconstruct the same analysis from the original observations.
+FeatureGraph separates that deterministic work from downstream interpretation. It converts an operational definition of behavior into explicit states, events, bounded occurrences, measurements, and relationships. The resulting records can then be handed to an analyst, database, or other computational system without requiring that consumer to reconstruct the same analysis from the original observations.
 
 The framework organizes this construction into three representational levels:
 
