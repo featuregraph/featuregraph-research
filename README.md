@@ -1,8 +1,13 @@
 # FeatureGraph Research
 
-FeatureGraph turns ordered observations into explicit behavioral objects that software can inspect and query.
+FeatureGraph is an open framework for deterministic, inspectable, and
+reproducible scientific data analysis.
 
-A raw time series contains values. It may also contain oscillations, transitions, and accumulations, but those behaviors remain implicit until their states, boundaries, identities, and properties are constructed. FeatureGraph performs that construction deterministically and returns one row per behavioral object.
+A researcher specifies what the data contains and what should be grouped,
+measured, compared, and checked. FeatureGraph carries out those declared steps
+deterministically, returns traceable result tables, and preserves the source
+observations behind them. Scientific interpretation remains with researchers
+and domain experts.
 
 ```text
 observations
@@ -73,7 +78,7 @@ long_oscillations = (
 - [Datasets](https://featuregraph.readthedocs.io/en/latest/datasets.html)
 - [API reference](https://featuregraph.readthedocs.io/en/latest/api/index.html)
 - [Demonstration notebook](https://github.com/featuregraph/featuregraph/blob/v0.1.0b1/notebooks/demo_notebook.ipynb)
-- [Beta paper draft](https://github.com/featuregraph/featuregraph/blob/beta/v0.1.x/artifacts/paper/bidmc_llm_preservation_study/manuscript.md)
+- [Current BIDMC study record](https://github.com/featuregraph/featuregraph/blob/main/artifacts/studies/bidmc_object_workflow_study.md)
 - [Current framework paper draft](https://github.com/featuregraph/featuregraph/blob/main/artifacts/paper/master/featuregraph_master_draft.md)
 - [Reproducibility guide](docs/reproducibility.md)
 - [Release `v0.1.0b1`](https://github.com/featuregraph/featuregraph/releases/tag/v0.1.0b1)
