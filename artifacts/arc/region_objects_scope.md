@@ -1,7 +1,17 @@
 # Region objects: scope
 
-Scoping document for the construction that follows block composition. Not a
-study record — nothing here is built yet.
+Scoping document for the construction that follows block composition.
+
+## Status
+
+Stage 1 and the alignment measurement are built:
+`featuregraph.behaviors.regions.RegionObjects` and `edit_alignment`, with
+`experiments/arc/region_probe.py` running both. The probe originally carried its
+own region labelling; it now runs on the library, and the refactor reproduced
+the earlier table row for row across all 1,522 rows and 15 columns, so the two
+implementations agreed before one was removed.
+
+Stage 2's change taxonomy and Stage 3 are not built.
 
 ## Why this construction
 

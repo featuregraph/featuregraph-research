@@ -6,6 +6,20 @@ All notable changes to FeatureGraph are documented in this file. The format foll
 
 ### Added
 
+- `RegionObjects` behavior constructing one object per connected region of a
+  grid, with size, bounding box, fill ratio, hole count, centroid, and border
+  contact. Connectivity, background colour, region definition, and background
+  inclusion are declared construction parameters recorded on the result.
+- `edit_alignment`, measuring whether the differences between paired grids fall
+  inside single regions. This asks whether regions are the right object
+  boundary, which is separate from whether an edit can be predicted.
+- Shared grid operators for rebuilding a grid from cell observations, labelling
+  connected regions, and counting enclosed holes, so that grid behaviors cannot
+  drift apart in what they call a region.
+- Region study over the 761 same-shape ARC-AGI-2 tasks: 94.2% of training and
+  94.0% of evaluation edit components lie inside a single region, against 5.1%
+  and 0.0% of tasks describable by block composition.
+
 - `BlockComposition` behavior constructing one object per output block of a grid
   pair, carrying each block's full operator candidate set instead of collapsing
   it to a single answer or raising on the first block that fails.

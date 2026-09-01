@@ -41,6 +41,7 @@ import pandas as pd
 
 from featuregraph.behaviors.base import Behavior, Group, Signals
 from featuregraph.behaviors.objects import BehaviorObjects
+from featuregraph.operators.grids import grid_from_cells
 from featuregraph.operators.registry import OperatorRecord
 from featuregraph.operators.spatial import block_operators, candidate_grid
 
@@ -307,8 +308,8 @@ class BlockComposition(Behavior):
             return None, "no_output_grid"
 
         try:
-            grid = _grid_from_cells(inputs, signal)
-            output = _grid_from_cells(outputs, signal)
+            grid = grid_from_cells(inputs, signal)
+            output = grid_from_cells(outputs, signal)
         except ValueError as error:
             return None, str(error)
 
@@ -433,21 +434,6 @@ def _intersect(candidate_sets: Iterable[frozenset[str]]) -> frozenset[str]:
             else result & frozenset(candidates)
         )
     return result if result is not None else frozenset()
-
-
-def _grid_from_cells(part: pd.DataFrame, signal: str) -> np.ndarray:
-    """Rebuild a dense grid from its cell observations."""
-    rows = part["row"].to_numpy(dtype=int)
-    columns = part["column"].to_numpy(dtype=int)
-    height = int(rows.max()) + 1
-    width = int(columns.max()) + 1
-
-    if len(part) != height * width:
-        raise ValueError("incomplete_grid_observations")
-
-    grid = np.zeros((height, width), dtype=int)
-    grid[rows, columns] = part[signal].to_numpy(dtype=int)
-    return grid
 
 
 def _iter_groups(

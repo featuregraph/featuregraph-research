@@ -3,8 +3,9 @@ FeatureGraph public API.
 """
 
 from . import datasets
-from .behaviors import accumulation, composition, oscillation
+from .behaviors import accumulation, composition, oscillation, regions
 from .behaviors.composition import BlockComposition, resolve_layout
+from .behaviors.regions import RegionObjects, edit_alignment
 from .utils._arc_agi import (
     get_block_coordinates,
     get_candidate_transformations,
@@ -27,6 +28,9 @@ __all__ = [
     "composition",
     "BlockComposition",
     "resolve_layout",
+    "regions",
+    "RegionObjects",
+    "edit_alignment",
     "datasets",
     "plot",
     "coordinate_arrays",
