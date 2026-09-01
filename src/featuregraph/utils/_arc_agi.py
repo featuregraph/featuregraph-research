@@ -103,7 +103,7 @@ def derive_state_instruction_layout(
     )
 
 
-def test_cycle(test_grid, instruction_layout):
+def test_cycle(test_grid, instruction_layout, background_color=0):
     """Compose a prediction from a concrete block-operator layout."""
     grid = np.asarray(test_grid)
     instruction_layout = np.asarray(instruction_layout)
@@ -113,7 +113,10 @@ def test_cycle(test_grid, instruction_layout):
         instruction_layout.shape[1] * grid_width,
     )
     block_coordinates = get_block_coordinates(grid.shape, predicted_shape)
-    valid_transformations = get_valid_transformations(grid)
+    valid_transformations = get_valid_transformations(
+        grid,
+        background_color=background_color,
+    )
     name_to_column = {
         transformation["name"]: column
         for column, transformation in enumerate(valid_transformations)
@@ -169,7 +172,13 @@ def solve_state_layout_task(task, background_color=0):
             state_to_operator,
             background_color=background_color,
         )
-        predictions.append(test_cycle(test_grid, instruction_layout))
+        predictions.append(
+            test_cycle(
+                test_grid,
+                instruction_layout,
+                background_color=background_color,
+            )
+        )
     return predictions
 
 
@@ -207,7 +216,10 @@ def _get_pair_evidence(training_pair, background_color=0):
     block_rows = output_height // grid_height
     block_columns = output_width // grid_width
     block_coordinates = get_block_coordinates(grid.shape, output.shape)
-    valid_transformations = get_valid_transformations(grid)
+    valid_transformations = get_valid_transformations(
+        grid,
+        background_color=background_color,
+    )
     operator_names = [item["name"] for item in valid_transformations]
     candidate_transformations = np.array([
         get_candidate_transformations(item["value"], block_coordinates)
@@ -259,7 +271,7 @@ def _validate_training_pairs(training_pairs):
         raise ValueError("Training cycle requires at least one pair.")
 
 
-def get_known_transformations(grid):
+def get_known_transformations(grid, background_color=0):
     transformations = {
         "copy": grid,
         "flip_horizontal": np.fliplr(grid),
@@ -267,7 +279,7 @@ def get_known_transformations(grid):
         "rotate_90": np.rot90(grid, k=1),
         "rotate_180": np.rot90(grid, k=2),
         "rotate_270": np.rot90(grid, k=3),
-        "background": np.full_like(grid, 0),
+        "background": np.full_like(grid, background_color),
     }
     return {
         name: {
@@ -279,10 +291,13 @@ def get_known_transformations(grid):
     }
 
 
-def get_valid_transformations(grid):
+def get_valid_transformations(grid, background_color=0):
     return [
         {"name": name, **transformation}
-        for name, transformation in get_known_transformations(grid).items()
+        for name, transformation in get_known_transformations(
+            grid,
+            background_color=background_color,
+        ).items()
         if transformation["valid"]
     ]
 

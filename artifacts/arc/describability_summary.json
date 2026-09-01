@@ -1,0 +1,40 @@
+{
+  "arc_agi_version": "2",
+  "dataset_revision": "f3283f727488ad98fe575ea6a5ac981e4a188e49",
+  "background_color": 0,
+  "operators": [
+    "copy",
+    "flip_horizontal",
+    "flip_vertical",
+    "rotate_90",
+    "rotate_180",
+    "rotate_270",
+    "background"
+  ],
+  "splits": [
+    {
+      "split": "evaluation",
+      "tasks": 120,
+      "in_frame": 81,
+      "identity_layout": 81,
+      "non_trivial_tiling": 0,
+      "blocks": 0,
+      "blocks_described": 0,
+      "blocks_unmatched": 0,
+      "fixed_layout_determined": 0,
+      "state_layout_determined": 0
+    },
+    {
+      "split": "training",
+      "tasks": 1000,
+      "in_frame": 731,
+      "identity_layout": 680,
+      "non_trivial_tiling": 51,
+      "blocks": 1075,
+      "blocks_described": 754,
+      "blocks_unmatched": 321,
+      "fixed_layout_determined": 21,
+      "state_layout_determined": 2
+    }
+  ]
+}

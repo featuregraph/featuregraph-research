@@ -6,6 +6,19 @@ All notable changes to FeatureGraph are documented in this file. The format foll
 
 ### Added
 
+- `BlockComposition` behavior constructing one object per output block of a grid
+  pair, carrying each block's full operator candidate set instead of collapsing
+  it to a single answer or raising on the first block that fails.
+- `resolve_layout`, which infers an instruction layout by intersecting block
+  candidate sets over a chosen grouping. Grouping by block position and grouping
+  by input-cell state are the two hypothesis classes previously implemented as
+  separate ARC solver families.
+- Declared block-operator vocabulary as `OperatorRecord` values, with the
+  constant-fill operator parameterized by background colour and quarter turns
+  masked rather than dropped on non-square grids.
+- ARC-AGI-2 describability study measuring where the block-composition
+  vocabulary applies across all 1,120 public tasks, with a per-task table, a
+  split-level summary recording the dataset revision, and a study record.
 - Causal FeatureGraph observation encoders and a paired-seed DQN experiment for
   raw, raw-history, behavioral-only, and augmented CartPole/MountainCar states.
 - Reproducible, cached MountainCar trajectories generated from the canonical
@@ -19,6 +32,11 @@ All notable changes to FeatureGraph are documented in this file. The format foll
 
 ### Changed
 
+- Replaced the orphaned `spatial_sketch` prototype with the `composition`
+  behavior module, which builds the same representation through the shared
+  `Behavior` construction pipeline.
+- Threaded `background_color` through the ARC block-composition utilities so a
+  task whose background is not zero is no longer filled with zeros.
 - Defined `alpha/v0.1.x` as a living oscillation-and-accumulation research line while keeping successor architecture work on `main`.
 - Pinned the Tennessee Eastman source revision and made its cache revision-specific.
 - Made the reproduction script read and validate the versioned manifest.
