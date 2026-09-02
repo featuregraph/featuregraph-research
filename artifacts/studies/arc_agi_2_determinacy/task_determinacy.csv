@@ -1,0 +1,1121 @@
+task,split,fixed,fixed_held_out,fixed_detail,state,state_held_out,state_detail
+00576224,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+007bbfb7,training,contradicted,,"no shared operator for (0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)",determined,correct,
+009d5c81,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+00d62c1b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+00dbd492,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+017c7c7b,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+025d127b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+03560426,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+045e512c,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+0520fde7,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+05269061,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+05a7bcf2,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+05f2a901,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+0607ce86,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+0692e18c,training,contradicted,,"no shared operator for (0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)",contradicted,,no shared operator for foreground
+06df4c85,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+070dd51e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+08ed6ac7,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+09629e4f,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+0962bcdd,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+09c534e7,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+0a1d4ef5,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+0a2355a6,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+0a938d79,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+0b148d64,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+0b17323b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+0bb8deee,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+0becf7df,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+0c786b71,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+0c9aba6e,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+0ca9ddb6,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+0d3d703e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+0d87d2a6,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+0e206a2e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+0e671a1a,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+0f63c0b9,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+103eff5b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+10fcaaa3,training,contradicted,,"no shared operator for (0, 0), (0, 1), (1, 0), (1, 1)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+11852cab,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1190bc91,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1190e5a7,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+11dc524f,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+11e1fe23,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+12422b43,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+12997ef3,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+12eac192,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+13713586,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+137eaa0f,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+137f0df0,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+13f06aa5,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+140c817e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+14754a24,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1478ab18,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+14b8e18c,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+150deff5,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+15113be4,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+15660dd6,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+15663ba9,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+15696249,training,contradicted,,"no shared operator for (0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0)",contradicted,,no observations for background; no shared operator for foreground
+17829a00,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+178fcbfb,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+17b80ad2,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+17b866bd,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+17cae0c1,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+18286ef8,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+182e5d0f,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+18419cfa,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+18447a8d,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+184a9768,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+195ba7dc,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+1990f7a8,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+19bb5feb,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+1a07d186,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1a244afd,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1a2e2828,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+1a6449f1,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+1acc24af,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1b2d62fb,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+1b59e163,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1b60fb0c,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1b8318e3,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1be83260,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+1bfc4729,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1c02dbbe,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1c0d0a4b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1c56ad9f,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1c786137,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+1caeab9d,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1cf80156,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+1d0a4b61,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1d398264,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1d61978c,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1da012fc,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1e0a9b12,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1e32b0e9,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1e5d6875,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1e81d6f9,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1efba499,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1f0c79e5,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1f642eb9,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1f85a75f,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+1f876c06,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1fad071e,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+2013d3e2,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+2037f2c7,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+2072aba6,training,contradicted,,"no shared operator for (0, 0), (0, 1), (1, 0), (1, 1)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+20818e16,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+20981f0e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+20fb2937,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+212895b5,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+21f83797,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+2204b7a8,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+22168020,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+22208ba4,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+22233c11,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+22425bda,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+22806e14,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+2281f1f4,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+228f6490,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+22a4bbc2,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+22eb0ac0,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+230f2e48,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+234bbc79,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+23581191,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+239be575,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+23b5c85d,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+25094a63,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+252143c9,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+253bf280,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+2546ccf6,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+256b0a75,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+25c199f5,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+25d487eb,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+25d8a9c8,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+25e02866,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+25ff71a9,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+2601afb7,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+264363fd,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+2685904e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+2697da3f,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+272f95fa,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+2753e76c,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+278e5215,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+27a28665,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+27a77e38,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+27f8ce4f,training,contradicted,,"no shared operator for (0, 0), (0, 1), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)",contradicted,,no observations for background; no shared operator for foreground
+281123b4,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+28bf18c6,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+28e73c20,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+292dd178,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+29623171,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+29700607,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+29c11459,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+2a28add5,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+2a5f8217,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+2b01abd0,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+2b9ef948,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+2bcee788,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+2bee17df,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+2c0b0aff,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+2c608aff,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+2c737e39,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+2ccd9fef,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+2dc579da,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+2dd70a9a,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+2de01db2,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+2dee498d,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+2e65ae53,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+2f0c5170,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+2f767503,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+2faf500b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+305b1341,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+30f42897,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+310f3251,training,contradicted,,"no shared operator for (0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+3194b014,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+319f2597,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+31aa019c,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+31adaf00,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+31d5ba1a,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+320afe60,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+321b1fc6,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+32597951,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+32e9702f,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+33067df9,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+332202d5,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+332efdb3,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+3345333e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+337b420f,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+3391f8c0,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+33b52de3,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+3428a4f5,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+342ae2ed,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+342dd610,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+3490cc26,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+34b99a2b,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+34cfa167,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+351d6448,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+358ba94e,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+3618c87e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+363442ee,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+36d67576,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+36fdfd69,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+37ce87bb,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+37d3e8b2,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+3906de3d,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+396d80d7,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+3979b1a8,training,contradicted,,"no shared operator for (0, 1), (1, 0), (1, 1); multiple operators remain for (0, 0): ['copy', 'flip_horizontal', 'flip_vertical', 'rotate_180', 'rotate_270', 'rotate_90']",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+39a8645d,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+39e1d7f9,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+3a301edc,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+3aa6fb7a,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+3ac3eb23,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+3ad05f52,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+3af2c5a8,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+3b4c2228,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+3bd292e8,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+3bd67248,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+3bdb4ada,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+3befdf3e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+3c9b0459,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+3cd86f4f,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+3d31c5b3,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+3d588dc9,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+3d6c6e23,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+3de23699,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+3e980e27,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+3eda0437,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+3ee1011a,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+3f23242b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+3f7978a0,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+4093f84a,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+40f6cd08,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+412b6263,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+414297c0,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+41ace6b5,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+41e4d17e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+423a55dc,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+4258a5f9,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+4290ef0e,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+42918530,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+42a15761,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+42a50994,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+42f14c03,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+42f83767,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+4347f46a,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+4364c1c4,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+444801d8,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+445eab21,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+447fd412,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+44d8ac46,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+44f52bb0,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+4522001f,training,contradicted,,"no shared operator for (0, 0), (0, 1), (1, 0), (1, 1), (1, 2), (2, 1), (2, 2)",contradicted,,"no shared operator for background, foreground"
+456873bc,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+45737921,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+458e3a53,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+45bbe264,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+4612dd53,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+46442a0e,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+465b7d93,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+469497ad,training,inapplicable,,Training pairs produced different instruction-layout shapes.,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+46c35fc7,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+46f33fce,training,contradicted,,"no shared operator for (0, 0), (0, 1), (1, 0), (1, 1)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+470c91de,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+47c1f68c,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+48131b3c,training,contradicted,,"no shared operator for (0, 0), (0, 1), (1, 0), (1, 1)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+484b58aa,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+4852f2fa,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+48634b99,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+48d8fb45,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+48f8583b,training,contradicted,,"no shared operator for (0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (2, 1), (2, 2)",contradicted,,no observations for background; no shared operator for foreground
+4938f0c2,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+494ef9d7,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+496994bd,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+49d1d64f,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+4a1cacc2,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+4acc7107,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+4b6b68e5,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+4be741c5,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+4c177718,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+4c4377d9,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+4c5c2cf0,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+4cd1b7b2,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+4df5b0ae,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+4e45f183,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+4e469f39,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+4e7e0eb9,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+4f537728,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+4ff4c9da,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+5034a0b5,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+505fff84,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+506d28a5,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+50846271,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+508bd3b6,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+50a16a69,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+50aad11f,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+50c07299,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+50cb2852,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+50f325b5,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+5117e062,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+5168d44c,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+516b51b7,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+5207a7b5,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+522fdd07,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+52364a65,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+5289ad53,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+52df9849,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+52fd389e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+538b439f,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+539a4f51,training,contradicted,,"no shared operator for (0, 0), (0, 1), (1, 0), (1, 1)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+53b68214,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+543a7ed5,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+54d82841,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+54d9e175,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+54db823b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+54dc2872,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+55059096,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+551d5bf1,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+5521c0d9,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+5582e5ca,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+5587a8d0,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+5614dbcf,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+5623160b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+56dc2b01,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+56ff96f3,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+5751f35e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+575b1a71,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+5783df64,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+5792cb4d,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+57aa92db,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+57edb29d,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+5833af48,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+58743b76,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+58c02a16,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+58e15b12,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+59341089,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+5a5a2103,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+5a719d11,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+5ad4f10b,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+5ad8a7c0,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+5adee1b2,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+5af49b42,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+5b37cb25,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+5b526a93,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+5b692c0f,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+5b6cbef5,training,contradicted,,"no shared operator for (0, 0), (0, 1), (0, 2), (0, 3), (1, 0), (1, 1), (1, 2), (1, 3), (2, 0), (2, 1), (2, 2), (2, 3), (3, 0), (3, 1), (3, 3)",determined,correct,
+5bd6f4ac,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+5c0a986e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+5c2c9af4,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+5d2a5c43,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+5d588b4d,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+5daaa586,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+5e6bbc0b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+5ecac7f7,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+5ffb2104,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+60a26a3e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+60b61512,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+60c09cac,training,contradicted,,"no shared operator for (0, 0), (0, 1), (1, 0), (1, 1)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+60d73be6,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6150a2bd,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6165ea8f,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+623ea044,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+626c0bcc,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+62ab2642,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+62b74c02,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+62c24649,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6350f1f4,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+63613498,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+639f5a19,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+642248e4,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+642d658d,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+6430c8c4,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+6455b5f5,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+64a7c07e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+652646ff,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+662c240a,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+668eec9a,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+66ac4c3b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+66e6c45b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+66f2d22f,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+67385a82,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+673ef223,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+67636eac,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+6773b310,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+67a3c6ac,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+67a423a3,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+67c52801,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+67e8384a,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+681b3aeb,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+6855a6e4,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+689c358e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+68b16354,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+68b67ca3,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+68bc2e87,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+692cd3b6,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+694f12f3,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+695367ec,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+696d4842,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+69889d6e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6a11f6da,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+6a1e5592,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6a980be1,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6aa20dc0,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6ad5bdfd,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6b9890af,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+6bcdb01e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6c434453,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6ca952ad,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6cbe9eb8,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+6cdd2623,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6cf79266,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6d0160f0,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6d0aefbc,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6d1d5c90,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+6d58a25d,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6d75e8bb,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6df30ad6,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6e02f1e3,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6e19193c,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6e82a1ae,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6ea4a07e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6ecd11f4,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+6f473927,training,contradicted,,"no shared operator for (0, 0), (0, 1)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6f8cd79b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6fa7a44f,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6ffe8f07,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7039b2d7,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+705a3229,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+712bf12e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+72207abc,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+72322fa7,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+72a961c9,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+72ca375d,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+73182012,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+73c3b0d8,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+73ccf9c2,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+7447852a,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7468f01a,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+746b3537,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+74dd1130,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+753ea09b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+758abdf0,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+759f3fd3,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+75b8110e,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+760b3cac,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+762cd429,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+770cc55f,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+776ffc46,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+77fdfe62,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+780d0b14,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+782b5218,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7837ac64,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+78e78cff,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+79369cc6,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+794b24be,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7953d61e,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+79cce52d,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+7acdf6d3,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7b6016b9,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7b7f7511,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+7bb29440,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+7c008303,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+7c8af763,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7c9b52a0,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+7d18a6fb,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+7d1f7ee8,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7d419a02,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7d7772cc,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7ddcd7ec,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7df24a62,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7e02026e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7e0986d6,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7e2bad24,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7e4d4f7c,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+7e576d6e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7ec998c9,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7ee1c6ea,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7f4411dc,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7fe24cdd,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+80214e03,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+80af3007,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+810b9b61,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+817e6c09,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+81c0276b,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+825aa9e9,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+82819916,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+83302e8f,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+833966f4,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+833dafe3,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+834ec97d,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+83b6b474,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+83eb0a57,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+8403a5d5,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+84551f4c,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+845d6e51,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+846bdb03,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+84ba50d3,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+84db8fc4,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+84f2aca1,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+855e0971,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+8597cfd7,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+85b81ff1,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+85c4e7cd,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+85fa5666,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+8618d23e,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+868de0fa,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+8719f442,training,contradicted,,"no shared operator for (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2), (2, 3), (2, 4), (3, 2), (3, 3), (3, 4), (4, 2), (4, 3)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+8731374e,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+878187ab,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+87ab05b8,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+880c1354,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+88207623,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+8886d717,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+88a10436,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+88a62173,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+890034e9,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+891232d6,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+896d5239,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+8a004b2b,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+8a371977,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+8a6d367c,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+8abad3cf,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+8b28cd80,training,contradicted,,"no shared operator for (0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)",contradicted,,"no shared operator for background, foreground"
+8ba14f53,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+8be77c9e,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+8cb8642d,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+8d5021e8,training,determined,correct,,contradicted,,"no shared operator for background, foreground"
+8d510a79,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+8dab14c2,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+8dae5dfc,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+8e1813be,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+8e2edd66,training,contradicted,,"no shared operator for (0, 1), (0, 2), (1, 0), (1, 1), (2, 0), (2, 2)",contradicted,,no shared operator for background
+8e301a54,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+8e5a5113,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+8eb1be9a,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+8ee62060,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+8efcae92,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+8f2ea7aa,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+8fbca751,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+8fff9e47,training,inapplicable,,Training pairs produced different instruction-layout shapes.,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+902510d5,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+90347967,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+90c28cc7,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+90f3ed37,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9110e3c5,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+913fb3ed,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+91413438,training,inapplicable,,Training pairs produced different instruction-layout shapes.,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+91714a58,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9172f3a0,training,contradicted,,"no shared operator for (0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 2)",contradicted,,no shared operator for foreground
+917bccba,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+928ad970,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+92e50de0,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9344f635,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9356391f,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+93b4f4b3,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+93b581b8,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+93c31fbe,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+94133066,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+941d9a10,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+94414823,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9473c6fb,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+94be5b80,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+94f9d214,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+952a094c,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9565186b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+95755ff2,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+95990924,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+95a58926,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+963c33f8,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+963e52fc,training,contradicted,,"no shared operator for (0, 1)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+963f59bc,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+96a8c0cd,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9720b24f,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+97239e3d,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+973e499e,training,inapplicable,,Training pairs produced different instruction-layout shapes.,contradicted,,no observations for background; no shared operator for foreground
+9772c176,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+97999447,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+97a05b5b,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+97c75046,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+981add89,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9841fdad,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+984d8a3e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+985ae207,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+98c475bf,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+98cf29f8,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+992798f6,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+99306f82,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+995c5fa3,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+9968a131,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+996ec1f3,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+99b1bc43,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+99caaf76,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+99fa7670,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9a4bb226,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+9aec4887,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+9af7a82c,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+9b2a60aa,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9b30e358,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9b365c51,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9b4c17c4,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9b5080bb,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9ba4a9aa,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+9bebae7a,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9c1e755f,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9c56f360,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9caba7c3,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9caf5b84,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9d9215db,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9ddd00f0,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9def23fe,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9dfd6313,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9edfc990,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9f236235,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+9f27f097,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9f41bd9c,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9f5f939b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9f669b64,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9f8de559,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a04b2602,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a096bf4d,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a09f6c25,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a1570a43,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a1aa0c1e,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+a2d730bd,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a2fd1cf0,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a3325580,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+a3f84088,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a406ac07,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a416b8f3,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a416fc5b,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a48eeaf7,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a5313dff,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a57f2f04,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a59b95c0,training,inapplicable,,Training pairs produced different instruction-layout shapes.,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a5f85a15,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a61ba2ce,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+a61f2674,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a644e277,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+a64e4611,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a65b410d,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a680ac02,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+a68b268e,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+a6953f00,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+a699fb00,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a740d043,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+a78176bb,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a79310a0,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a834deea,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a85d4709,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a8610ef7,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a87f7484,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+a8c38be5,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+a8d7556c,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a934301b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a9f96cdd,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+aa18de87,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+aa300dc3,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+aa62e3f4,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+aab50785,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+aabf363d,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+aaecdb9a,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+aaef0977,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+aba27056,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+abbfd121,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+ac0a08a4,training,inapplicable,,Training pairs produced different instruction-layout shapes.,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ac0c2ac3,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ac0c5833,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ac2e8ecf,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ac3e2b04,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ac605cbb,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ac6f9922,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+ad173014,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ad38a9d0,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ad3b40cf,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ad7e01d0,training,inapplicable,,Training pairs produced different instruction-layout shapes.,contradicted,,no shared operator for foreground
+ae3edfdc,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ae4f1146,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+ae58858e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+aedd82e4,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+aee291af,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+af24b4cc,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+af726779,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+af902bf9,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+afe3afe9,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+b0722778,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+b0c4d837,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+b0f4d537,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+b15fca0b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b190f7f5,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+b1948b0a,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b1986d4b,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+b1fc8b8e,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+b20f7c8b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b230c067,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b25e450b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b27ca6d3,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b2862040,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b2bc3ffd,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b457fec5,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b4a43f3b,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+b527c5c6,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b548a754,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b5bb5719,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b60334d2,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b6afb2da,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b71a7747,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+b7249182,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b7256dcd,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b745798f,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b74ca5d1,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b775ac94,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b782dc8a,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b7955b3c,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b7999b51,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+b7cb93ac,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+b7f8a4d8,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b7fb29bc,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b8825c91,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b8cdaf2b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b91ae062,training,inapplicable,,Training pairs produced different instruction-layout shapes.,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b942fd60,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b94a9452,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+b9630600,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b9b7f026,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+ba1aa698,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+ba26e723,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ba97ae07,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ba9d41b8,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+bae5c565,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+baf41dbf,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+bb43febb,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+bb52a14b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+bbb1b8b6,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+bbc9ae5d,training,inapplicable,,Training pairs produced different instruction-layout shapes.,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+bc1d5164,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+bc4146bd,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+bc93ec48,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+bcb3040b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+bd14c3bf,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+bd283c4a,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+bd4472b8,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+bd5af378,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+bda2d7a6,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+bdad9b1f,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+be03b35f,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+be94b721,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+beb8660c,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+bf32578f,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+bf699163,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+bf89d739,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+c074846d,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+c0f76784,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+c1990cce,training,inapplicable,,Training pairs produced different instruction-layout shapes.,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+c1d99e64,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+c3202e5a,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+c35c1b4c,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+c3e719e8,training,contradicted,,"no shared operator for (0, 0), (0, 1), (0, 2), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)",contradicted,,no observations for background; no shared operator for foreground
+c3fa4749,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+c444b776,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+c48954c1,training,determined,correct,,contradicted,,no observations for background; no shared operator for foreground
+c4d1a9ae,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+c59eb873,training,contradicted,,"no shared operator for (0, 0), (0, 1), (1, 0), (1, 1)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+c6141b15,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+c61be7dc,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+c62e2108,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+c64f1187,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+c658a4bd,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+c6e1b8da,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+c7d4e6ad,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+c803e39c,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+c87289bb,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+c8b7cc0f,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+c8cbb738,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+c8f0f002,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+c909285e,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+c920a713,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+c92b942c,training,contradicted,,"no shared operator for (0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+c9680e90,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+c97c0139,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+c9e6f938,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+c9f8e694,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ca8de6ea,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+caa06a1f,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+cad67732,training,contradicted,,"no shared operator for (0, 0), (0, 1), (1, 0), (1, 1)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+cb227835,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+cbded52d,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+cc9053aa,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ccd554ac,training,inapplicable,,Training pairs produced different instruction-layout shapes.,determined,correct,
+cce03e0d,training,contradicted,,"no shared operator for (0, 0), (0, 2), (1, 0), (1, 1), (2, 0)",contradicted,,no shared operator for foreground
+cd3c21df,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+cdecee7f,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+ce039d91,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ce22a75a,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ce4f8723,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+ce602527,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+ce8d95cc,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+ce9e57f2,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+cf133acc,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+cf5fd0ad,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+cf98881b,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+cfb2ce5a,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d017b73f,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+d037b0a7,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d06dbe63,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d07ae81c,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d0f5fe59,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+d10ecb37,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+d13f3404,training,contradicted,,"no shared operator for (0, 0), (0, 1), (1, 0), (1, 1)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d19f7514,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+d22278a0,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d23f8c26,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d255d7a7,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d282b262,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d2abd087,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d2acf2cb,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d304284e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d364b489,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d37a1ef5,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d406998b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d43fd935,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d4469b4b,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+d47aa2ff,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+d492a647,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d4a91cb9,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d4b1c2b1,training,inapplicable,,Training pairs produced different instruction-layout shapes.,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d4c90558,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+d4f3cd78,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d511f180,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d56f2372,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+d5c634a2,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+d5d6de2d,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d631b094,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+d6542281,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d687bc17,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d6ad076f,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d6e50e54,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d749d46f,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+d753a70b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d89b689b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d8c310e9,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d90796e8,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d931c21c,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d93c6891,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d94c3b52,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d968ffd4,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d9f24cd1,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d9fac9be,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+da2b0fe3,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+da6e95e5,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+dae9d2b5,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+db118e2a,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+db3e9e38,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+db615bd4,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+db7260a4,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+db93a21d,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+dbc1a6ce,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+dc1df850,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+dc2aa30b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+dc2e9a9d,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+dc433765,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+dc46ea44,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+dce56571,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+dd2401ed,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ddf7fa4f,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+de1cd16c,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+de493100,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+ded97339,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+df8cc377,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+df978a02,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+df9fd884,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e048c9ed,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e0fb7511,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e133d23d,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+e179c5f4,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e1baa8a4,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+e1d2900e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e2092e0c,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e21a174a,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e21d9049,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e26a3af2,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e345f17b,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+e3497940,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+e39e9282,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e3f79277,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+e3fe1151,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e4075551,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e40b9e2f,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e41c6fd3,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e45ef808,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e4888269,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e48d4e1a,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e4941b18,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e5062a87,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e509e548,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e50d258f,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+e57337a4,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+e5790162,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e5c44e8f,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e619ca6e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e633a9e5,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+e6721834,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+e681b708,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e69241bd,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e6de6e8f,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+e729b7be,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e73095fd,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e734a0e8,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e74e1818,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e760a62e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e7639916,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e76a88a6,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e78887d1,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+e7a25a18,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+e7b06bea,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e7dd8335,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e84fef15,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+e8593010,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e872b94a,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+e88171ec,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e8dc4411,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e9614598,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e98196ab,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+e99362f0,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+e9ac8c9e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e9afcf9a,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e9b4f6fc,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+e9bb6954,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e9c9d9a1,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e9fc42f2,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+ea32f347,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ea786f4a,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ea959feb,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ea9794b1,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+eb281b96,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+eb5a1d5d,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+ec883f72,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ecaa0ec1,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ecb67b6d,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ecdecbb3,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ed36ccf7,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ed74f2f2,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+ed98d772,training,determined,correct,,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+edcc2ff0,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ef135b50,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ef26cbf6,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f0100645,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f0afb749,training,contradicted,,"no shared operator for (0, 0), (0, 1), (1, 0), (1, 1)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f0df5ff0,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f0f8a26d,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f15e1fac,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f18ec8cc,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f1bcbc2c,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f1cefba8,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f21745ec,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f25fbde4,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+f25ffba3,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f2829549,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+f28a3cbb,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f341894c,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f35d900a,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f3b10344,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f3cdc58f,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f3e14006,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f3e62deb,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f45f5ca7,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f5aa3634,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+f5b8619d,training,contradicted,,"no shared operator for (0, 0), (0, 1), (1, 0), (1, 1)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f5c89df1,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f76d97a5,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f823c43c,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f83cb3f6,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f8a8fe49,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f8b3ba0a,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+f8be4b64,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f8c80d96,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f8cc533f,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f8f52ecc,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f8ff0b80,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+f9012d9b,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+f9a67cb5,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+f9d67f8b,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+fafd9572,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+fafffa47,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+fb791726,training,contradicted,,"no shared operator for (0, 0), (0, 1), (1, 0), (1, 1)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+fbf15a0b,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+fc10701f,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+fc4aaf52,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+fc754716,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+fcb5c309,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+fcc82909,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+fd02da9e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+fd096ab6,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+fd4b2b02,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+fe45cba4,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+fe9372f3,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+fea12743,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+feca6190,training,inapplicable,,Training pairs produced different instruction-layout shapes.,inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ff2825db,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ff28f65a,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+ff72ca3e,training,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+ff805c23,training,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+0934a4d8,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+135a2760,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+136b0064,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+13e47133,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+142ca369,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+16b78196,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+16de56c4,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1818057f,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+195c6913,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+1ae2feb7,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+20270e3b,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+20a9e565,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+21897d95,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+221dfab4,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+247ef758,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+269e22fb,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+271d71e2,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+28a6681f,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+291dc1e1,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+2b83f449,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+2ba387bc,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+2c181942,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+2d0172a1,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+31f7f899,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+332f06d7,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+35ab12c3,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+36a08778,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+38007db0,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+3a25b0d8,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+3dc255db,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+3e6067c3,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+409aa875,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+446ef5d2,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+45a5af55,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+4a21e3da,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+4c3d4a41,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+4c416de3,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+4c7dc4dd,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+4e34c42c,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+53fb4810,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+5545f144,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+581f7754,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+58490d8a,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+58f5dbd5,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+5961cc34,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+5dbc8537,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+62593bfd,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+64efde09,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+65b59efc,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+67e490f4,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+6e453dd6,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6e4f6532,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+6ffbe589,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+71e489b6,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7491f3cf,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7666fa5d,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+78332cb0,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+7b0280bc,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7b3084d4,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+7b5033c1,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+7b80bb43,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7c66cb00,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+7ed72f31,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+800d221b,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+80a900e0,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+8698868d,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+88bcf3b4,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+88e364bc,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+89565ca0,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+898e7135,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+8b7bacbf,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+8b9c3697,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+8e5c0c38,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+8f215267,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+8f3a5a89,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9385bd28,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+97d7923e,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+981571dc,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9aaea919,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+9bbf930d,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a251c730,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+a25697e4,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a32d8b75,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+a395ee82,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a47bf94d,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+a6f40cea,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+aa4ec2a5,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+abc82100,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b0039139,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+b10624e5,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b5ca7ac4,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b6f77b65,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b99e7126,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+b9e38dc0,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+bf45cf4b,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+c4d067a0,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+c7f57c3e,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+cb2d8a2c,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+cbebaa4b,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d35bdbdc,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d59b0160,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+d8e07eb2,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+da515329,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+db0c5428,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+db695cfb,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+dbff022c,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+dd6b8c4b,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+de809cff,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+dfadab01,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e12f9a14,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e3721c99,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e376de54,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+e8686506,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+e87109e9,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+edb79dae,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+eee78d87,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+f560132c,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+f931b4a8,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
+faa9f03d,evaluation,contradicted,,"no shared operator for (0, 0)",inapplicable,,State-derived layouts require the output block layout to have the same shape as the input grid.
+fc7cae8d,evaluation,inapplicable,,Output cannot be divided into input-shaped blocks.,inapplicable,,Output cannot be divided into input-shaped blocks.
