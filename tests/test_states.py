@@ -1,7 +1,7 @@
 import pandas as pd
 from pandas.testing import assert_series_equal
 
-from featuregraph.operators.states import (
+from featuregraph_research.operators.states import (
     accumulating_state,
     depleting_state,
     falling_state,

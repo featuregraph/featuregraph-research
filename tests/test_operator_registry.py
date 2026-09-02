@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 
-from featuregraph.operators import OperatorRecord
+from featuregraph_research.operators import OperatorRecord
 
 
 def test_operator_record_applies_named_shape_preserving_operator() -> None:

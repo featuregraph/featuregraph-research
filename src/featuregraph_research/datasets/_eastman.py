@@ -2,8 +2,8 @@ from __future__ import annotations
 
 import pandas as pd
 
-from featuregraph.utils._eastman import load_tep_run
-from featuregraph.utils._rename_map import eastman_map
+from featuregraph_research.utils._eastman import load_tep_run
+from featuregraph_research.utils._rename_map import eastman_map
 
 
 def eastman(

@@ -3,7 +3,7 @@ import pandas as pd
 import pytest
 from pandas.testing import assert_frame_equal, assert_series_equal
 
-from featuregraph.behaviors.oscillation import Oscillation
+from featuregraph_research.behaviors.oscillation import Oscillation
 
 
 def test_fit_transform_constructs_expected_primitives(

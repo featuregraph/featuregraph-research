@@ -24,7 +24,7 @@ from pathlib import Path
 
 import numpy as np
 
-from featuregraph.utils._arc_agi import (
+from featuregraph_research.utils._arc_agi import (
     derive_state_instruction_layout,
     fixed_layout_evidence,
     state_evidence,

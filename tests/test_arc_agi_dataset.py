@@ -5,7 +5,7 @@ import json
 import pandas as pd
 import pytest
 
-from featuregraph.datasets import arc_agi
+from featuregraph_research.datasets import arc_agi
 
 
 @pytest.fixture

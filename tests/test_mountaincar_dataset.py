@@ -3,8 +3,8 @@ from pathlib import Path
 import pandas as pd
 import pytest
 
-import featuregraph as fg
-from featuregraph.datasets._mountaincar import (
+import featuregraph_research as fg
+from featuregraph_research.datasets._mountaincar import (
     EXPLORATION_RATE,
     MOUNTAINCAR_ENVIRONMENT,
     MOUNTAINCAR_GENERATOR_VERSION,
@@ -108,7 +108,7 @@ def test_mountaincar_uses_cache_and_restores_metadata(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     monkeypatch.setattr(
-        "featuregraph.datasets._mountaincar.get_mountaincar_cache_dir",
+        "featuregraph_research.datasets._mountaincar.get_mountaincar_cache_dir",
         lambda: tmp_path,
     )
 

@@ -180,7 +180,7 @@ def load_bidmc_subject(
 
     This is the primary BIDMC loader used by FeatureGraph. It returns a
     DataFrame directly so that its output can be passed into behavioral
-    constructors such as ``featuregraph.oscillate``.
+    constructors such as ``featuregraph_research.oscillate``.
 
     Numerics and breath annotations remain available through
     ``load_bidmc_numerics`` and ``load_bidmc_breaths``.
