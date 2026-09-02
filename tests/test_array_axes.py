@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pytest
 
-from featuregraph import coordinate_arrays, plot_array_axes
+from featuregraph_research import coordinate_arrays, plot_array_axes
 
 
 def test_coordinate_arrays_make_cell_and_block_axes() -> None:

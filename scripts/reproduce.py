@@ -20,11 +20,11 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 
-import featuregraph as fg
+import featuregraph_research as fg
 
 MANIFEST_PATH = Path("reproducibility/manifest.json")
 PACKAGES = (
-    "featuregraph",
+    "featuregraph-research",
     "numpy",
     "pandas",
     "scipy",

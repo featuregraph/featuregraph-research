@@ -1,19 +1,19 @@
 import pandas as pd
 
-from featuregraph.behaviors.base import Behavior, Group, Signals
-from featuregraph.behaviors.objects import BehaviorObjects
-from featuregraph.operators.events import (
+from featuregraph_research.behaviors.base import Behavior, Group, Signals
+from featuregraph_research.behaviors.objects import BehaviorObjects
+from featuregraph_research.operators.events import (
     enter_state,
     event_id,
     event_index,
     exit_state,
     preceding_sample_event,
 )
-from featuregraph.operators.states import (
+from featuregraph_research.operators.states import (
     negative_state,
     positive_state,
 )
-from featuregraph.preprocessing.smoothing import smooth
+from featuregraph_research.preprocessing.smoothing import smooth
 
 
 class Oscillation(Behavior):

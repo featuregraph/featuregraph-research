@@ -3,8 +3,8 @@ from pathlib import Path
 import pandas as pd
 import pytest
 
-import featuregraph as fg
-from featuregraph.datasets._cartpole import (
+import featuregraph_research as fg
+from featuregraph_research.datasets._cartpole import (
     CARTPOLE_ENVIRONMENT,
     CARTPOLE_GENERATOR_VERSION,
     _generate_trajectories,
@@ -116,7 +116,7 @@ def test_cartpole_uses_cache_and_restores_metadata(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     monkeypatch.setattr(
-        "featuregraph.datasets._cartpole.get_cartpole_cache_dir",
+        "featuregraph_research.datasets._cartpole.get_cartpole_cache_dir",
         lambda: tmp_path,
     )
 

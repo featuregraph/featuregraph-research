@@ -2,7 +2,7 @@ import pandas as pd
 import pytest
 from pandas.testing import assert_frame_equal
 
-from featuregraph.behaviors.objects import BehaviorObjects
+from featuregraph_research.behaviors.objects import BehaviorObjects
 
 
 @pytest.fixture

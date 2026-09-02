@@ -4,8 +4,8 @@ from numbers import Real
 import numpy as np
 import pandas as pd
 
-from featuregraph.behaviors.base import Behavior, Group, Signals
-from featuregraph.behaviors.objects import BehaviorObjects
+from featuregraph_research.behaviors.base import Behavior, Group, Signals
+from featuregraph_research.behaviors.objects import BehaviorObjects
 
 ThresholdValue = Real | str
 Threshold = ThresholdValue | Mapping[str, ThresholdValue]

@@ -4,7 +4,7 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from featuregraph.utils._arc_agi import (
+from featuregraph_research.utils._arc_agi import (
     fallback_predictions,
     fixed_layout_evidence,
     fixed_layout_training_cycle,

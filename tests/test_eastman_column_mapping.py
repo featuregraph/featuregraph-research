@@ -1,10 +1,10 @@
 import pandas as pd
 import pytest
 
-from featuregraph.utils._eastman import (
+from featuregraph_research.utils._eastman import (
     _relabel_faultfree_measurement_columns,
 )
-from featuregraph.utils._rename_map import eastman_map
+from featuregraph_research.utils._rename_map import eastman_map
 
 
 def test_faultfree_measurements_use_xmeas_names_before_shared_rename():

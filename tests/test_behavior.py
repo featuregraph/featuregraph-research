@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from featuregraph.behaviors.oscillation import Oscillation
+from featuregraph_research.behaviors.oscillation import Oscillation
 
 
 def test_constructor_normalizes_signal_and_group_names() -> None:

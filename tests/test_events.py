@@ -1,7 +1,7 @@
 import pandas as pd
 from pandas.testing import assert_series_equal
 
-from featuregraph.operators.events import (
+from featuregraph_research.operators.events import (
     enter_state,
     event_id,
     event_index,

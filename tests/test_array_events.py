@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 
-from featuregraph.operators import between_masks, enter_mask, exit_mask
+from featuregraph_research.operators import between_masks, enter_mask, exit_mask
 
 
 def test_numpy_enter_exit_and_between_masks() -> None:

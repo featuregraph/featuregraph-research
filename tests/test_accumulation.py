@@ -1,8 +1,8 @@
 import pandas as pd
 import pytest
 
-from featuregraph.behaviors.accumulation import Accumulation
-from featuregraph.behaviors.oscillation import Oscillation
+from featuregraph_research.behaviors.accumulation import Accumulation
+from featuregraph_research.behaviors.oscillation import Oscillation
 
 
 def oscillation_features(df: pd.DataFrame) -> pd.DataFrame:

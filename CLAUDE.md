@@ -3,18 +3,39 @@
 The research record: studies, papers, reproduction scripts, and the notebooks
 behind them. The framework lives in a separate repository.
 
-## Name collision — read this before debugging anything
+## The package is `featuregraph_research`
 
-**This repository and `featuregraph/featuregraph` both ship a Python package
-called `featuregraph`.** Same import path, different modules. `utils/_arc_agi.py`
-is here and not there; `contracts/` and `study_builder/` are there and not here.
+This repository ships a Python package importable as **`featuregraph_research`**,
+distributed as `featuregraph-research`. The framework in
+`featuregraph/featuregraph` ships `featuregraph`. They are different packages
+and both can now be installed into one environment.
 
-- This repo publishes docs at **`featuregraph.readthedocs.io`**.
-- The framework publishes at `featuregraph-framework.readthedocs.io`.
+They were not always distinguishable. Both once declared `name = "featuregraph"`
+at the same version with the same description, so pip treated them as one
+distribution and installing either clobbered the other. That collision produced
+a wrong docs link across the live marketing site and a false bug report before
+it was found.
 
-That collision has already produced a wrong docs link on the live marketing site
-and a false bug report. If an import surprises you, check which package you are
-in before concluding anything is broken.
+This package began as a fork of the framework's beta and has diverged: the same
+nineteen modules, all modified, plus `utils/_arc_agi.py`, `utils/_arc_agi_pairs.py`,
+`utils/_array_axes.py`, `operators/registry.py`, `operators/array_events.py`,
+`behaviors/spatial_sketch.py` and `datasets/_arc_agi.py`, none of which exist
+in the framework.
+
+Two things deliberately kept the old name, and should keep it:
+
+- **`"featuregraph"` as a representation label** in the RL and TEP experiments —
+  `Literal["raw", "raw_history", "featuregraph", "augmented"]` and the dict keys
+  beside it. These name a scientific result column, not a module. Renaming them
+  would silently change what published tables mean.
+- **`~/.cache/featuregraph/`** as the dataset cache. Renaming it would orphan
+  every downloaded BIDMC and Tennessee Eastman file, and sharing the cache with
+  the framework is a feature.
+
+The prose in `README.md` and `docs/` documents the *framework's* released beta —
+that is why it says `pip install "featuregraph @ git+...featuregraph.git@v0.1.0b1"`
+and `import featuregraph as fg`. That is correct and was left alone. This
+repository has no release tag of its own.
 
 ## What this repository is for
 

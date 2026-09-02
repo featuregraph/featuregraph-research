@@ -14,7 +14,7 @@ from typing import Iterable
 
 import numpy as np
 import pandas as pd
-import featuregraph as fg
+import featuregraph_research as fg
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import (
@@ -26,7 +26,7 @@ from sklearn.metrics import (
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 
-from featuregraph.utils._eastman import GITHUB_REVISION
+from featuregraph_research.utils._eastman import GITHUB_REVISION
 
 DEFAULT_FAULTS = (1, 2, 4, 6, 7, 12, 14)
 DEFAULT_TRAIN_RUNS = (1, 2, 3)
