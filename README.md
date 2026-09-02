@@ -34,8 +34,6 @@ FeatureGraph is the current form of a question this work has returned to for a
 decade: how do you represent what a system is doing, from ordered observations
 of it, in a way another person can check?
 
-The approaches changed. The question did not.
-
 - **2016–2019** — [`smartcab`](https://github.com/habibdraft/smartcab),
   [`rl-agents`](https://github.com/habibdraft/rl-agents): learning agents over
   discrete states and actions.
