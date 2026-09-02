@@ -2,9 +2,12 @@ import json
 from pathlib import Path
 
 import numpy as np
+import pytest
 
 from featuregraph.utils._arc_agi import (
     fallback_predictions,
+    fixed_layout_evidence,
+    fixed_layout_training_cycle,
     get_test_grids,
     get_training_pairs,
     load_challenges,
@@ -15,6 +18,8 @@ from featuregraph.utils._arc_agi import (
     solve_fixed_layout_task,
     solve_state_layout_task,
     solve_task,
+    state_evidence,
+    state_training_cycle,
     write_submission,
 )
 
@@ -159,8 +164,10 @@ def test_solve_challenges_isolates_unsupported_tasks():
 
     failure = failures["unsupported"]
     assert failure.startswith("No solver family matched the task.")
-    assert "fixed: No operator matched block (0, 0)." in failure
-    assert "state: No operator matched block (0, 0)." in failure
+    # Wording changed with the evidence report: contradiction is now named the
+    # same way on both solver families. The refusal itself is unchanged.
+    assert "fixed: no shared operator for (0, 0)" in failure
+    assert "state: State-derived layouts require" in failure
 
     assert submission["supported"][0]["attempt_1"] == (
         expected_prediction().tolist()
@@ -294,3 +301,71 @@ def test_solver_dispatches_both_official_layout_families():
         task = load_official_arc_task(task_id)
 
         assert_test_predictions_exact(task, solve_task(task))
+
+
+def underdetermined_pairs():
+    """A grid symmetric under every candidate operator.
+
+    The state path needs the block layout to match the grid shape, so a 2x2
+    grid takes a 4x4 output.
+    """
+    return [{"grid": [[1, 1], [1, 1]], "output": [[1, 1, 1, 1]] * 4}]
+
+
+def contradicted_pairs():
+    """An output block no operator in the vocabulary produces."""
+    return [{"grid": [[1, 2], [3, 4]], "output": [[9, 9], [9, 9]]}]
+
+
+def test_evidence_reports_what_survived_instead_of_only_failing():
+    evidence = state_evidence(underdetermined_pairs())
+
+    # The solver raises here and throws the interesting part away: these
+    # examples are consistent with several operators and simply do not
+    # distinguish them. That is a measurement, not an error.
+    assert not evidence.determined
+    assert evidence.contradicted == ()
+    assert "copy" in evidence.underdetermined["foreground"]
+    assert len(evidence.underdetermined["foreground"]) > 1
+
+
+def test_evidence_separates_contradiction_from_underdetermination():
+    evidence = fixed_layout_evidence(contradicted_pairs())
+
+    assert evidence.contradicted == ((0, 0),)
+    assert evidence.underdetermined == {}
+    assert evidence.resolved == {}
+
+
+def test_evidence_reports_a_state_never_observed():
+    # Every cell is foreground, so nothing was ever seen about background.
+    evidence = state_evidence([{"grid": [[1, 2]], "output": [[1, 2, 2, 1]]}])
+
+    assert evidence.unobserved == ("background",)
+    assert "background" not in evidence.contradicted
+
+
+def test_determined_evidence_matches_what_the_solver_returns():
+    pairs = get_training_pairs(supported_task())
+    evidence = fixed_layout_evidence(pairs)
+
+    assert evidence.determined
+    assert evidence.unresolved == ()
+    layout = fixed_layout_training_cycle(pairs)
+    assert {index: layout[index] for index in evidence.resolved} == evidence.resolved
+
+
+def test_the_solver_still_refuses_and_says_why():
+    with pytest.raises(ValueError, match="multiple operators remain"):
+        state_training_cycle(underdetermined_pairs())
+    with pytest.raises(ValueError, match="no shared operator"):
+        fixed_layout_training_cycle(contradicted_pairs())
+
+
+def test_a_block_no_operator_reproduces_is_reported_not_raised():
+    # This used to raise inside candidate generation, before any layer could
+    # count it. Contradiction is now a value the report carries.
+    evidence = fixed_layout_evidence(contradicted_pairs())
+
+    assert evidence.contradicted == ((0, 0),)
+    assert "no shared operator" in evidence.failure_message()

@@ -1,14 +1,77 @@
 """NumPy utilities for block-composition ARC-AGI tasks."""
 
 import json
+from dataclasses import dataclass, field
 from pathlib import Path
 
 import matplotlib.pyplot as plt
 import numpy as np
 
 
-def fixed_layout_training_cycle(training_pairs):
-    """Infer one block-coordinate-to-operator layout shared by all pairs."""
+@dataclass(frozen=True)
+class OperatorEvidence:
+    """What the training pairs determined, and where they fell short.
+
+    The solvers raise on the first thing they cannot resolve, which is right
+    when the caller wants an answer. It throws away the more interesting
+    result: a candidate set that survived every training pair but still holds
+    more than one operator is not a failure, it is a measurement of what the
+    examples left open.
+
+    Three ways a key can go unresolved, and they are not the same:
+
+    ``unobserved``
+        The key never appeared in any training pair, so nothing is known
+        about it. Silence, not evidence.
+    ``contradicted``
+        Every candidate was eliminated. The pairs disagree, or the operator
+        vocabulary does not contain whatever produced this output.
+    ``underdetermined``
+        Several candidates survived. The pairs are consistent and simply do
+        not distinguish between them.
+    """
+
+    resolved: dict = field(default_factory=dict)
+    unobserved: tuple = ()
+    contradicted: tuple = ()
+    underdetermined: dict = field(default_factory=dict)
+
+    @property
+    def determined(self) -> bool:
+        """Whether every key resolved to exactly one operator."""
+        return not (self.unobserved or self.contradicted or self.underdetermined)
+
+    @property
+    def unresolved(self) -> tuple:
+        """Every key without a single answer, in a stable order."""
+        return tuple(
+            sorted(
+                [str(key) for key in self.unobserved]
+                + [str(key) for key in self.contradicted]
+                + [str(key) for key in self.underdetermined],
+            )
+        )
+
+    def failure_message(self) -> str:
+        """One line naming what is unresolved, or an empty string."""
+        parts = []
+        if self.unobserved:
+            parts.append(
+                "no observations for " + ", ".join(map(str, self.unobserved))
+            )
+        if self.contradicted:
+            parts.append(
+                "no shared operator for " + ", ".join(map(str, self.contradicted))
+            )
+        for key, candidates in self.underdetermined.items():
+            parts.append(
+                f"multiple operators remain for {key}: {sorted(candidates)}"
+            )
+        return "; ".join(parts)
+
+
+def fixed_layout_evidence(training_pairs):
+    """Report what the pairs determine about each block coordinate."""
     _validate_training_pairs(training_pairs)
     shared_candidates = None
 
@@ -24,11 +87,41 @@ def fixed_layout_training_cycle(training_pairs):
         for index in np.ndindex(shared_candidates.shape):
             shared_candidates[index] &= pair_candidates[index]
 
-    return _resolve_candidate_layout(shared_candidates)
+    resolved = {}
+    contradicted = []
+    underdetermined = {}
+    for index in np.ndindex(shared_candidates.shape):
+        candidates = shared_candidates[index]
+        if len(candidates) == 0:
+            contradicted.append(index)
+        elif len(candidates) > 1:
+            underdetermined[index] = tuple(sorted(candidates))
+        else:
+            resolved[index] = next(iter(candidates))
+    return OperatorEvidence(
+        resolved=resolved,
+        contradicted=tuple(contradicted),
+        underdetermined=underdetermined,
+    )
 
 
-def state_training_cycle(training_pairs, background_color=0):
-    """Infer a state-to-operator mapping shared by all observations."""
+def fixed_layout_training_cycle(training_pairs):
+    """Infer one block-coordinate-to-operator layout shared by all pairs."""
+    evidence = fixed_layout_evidence(training_pairs)
+    if not evidence.determined:
+        raise ValueError(evidence.failure_message())
+    shape = (
+        max(index[0] for index in evidence.resolved) + 1,
+        max(index[1] for index in evidence.resolved) + 1,
+    )
+    instruction_layout = np.empty(shape, dtype=object)
+    for index, operator in evidence.resolved.items():
+        instruction_layout[index] = operator
+    return instruction_layout
+
+
+def state_evidence(training_pairs, background_color=0):
+    """Report what the pairs determine about each state's operator."""
     _validate_training_pairs(training_pairs)
     state_candidates = {"background": None, "foreground": None}
 
@@ -51,24 +144,33 @@ def state_training_cycle(training_pairs, background_color=0):
                 else:
                     state_candidates[state] &= candidates
 
-    state_to_operator = {}
+    resolved = {}
+    unobserved = []
+    contradicted = []
+    underdetermined = {}
     for state, candidates in state_candidates.items():
         if candidates is None:
-            raise ValueError(
-                f"Training pairs contain no observations for state {state!r}."
-            )
-        if len(candidates) == 0:
-            raise ValueError(
-                f"Training pairs have no shared operator for state {state!r}."
-            )
-        if len(candidates) > 1:
-            raise ValueError(
-                "Multiple operators remain after all training observations "
-                f"for state {state!r}: {sorted(candidates)}"
-            )
-        state_to_operator[state] = next(iter(candidates))
+            unobserved.append(state)
+        elif len(candidates) == 0:
+            contradicted.append(state)
+        elif len(candidates) > 1:
+            underdetermined[state] = tuple(sorted(candidates))
+        else:
+            resolved[state] = next(iter(candidates))
+    return OperatorEvidence(
+        resolved=resolved,
+        unobserved=tuple(unobserved),
+        contradicted=tuple(contradicted),
+        underdetermined=underdetermined,
+    )
 
-    return state_to_operator
+
+def state_training_cycle(training_pairs, background_color=0):
+    """Infer a state-to-operator mapping shared by all observations."""
+    evidence = state_evidence(training_pairs, background_color=background_color)
+    if not evidence.determined:
+        raise ValueError(evidence.failure_message())
+    return dict(evidence.resolved)
 
 
 def training_cycle(training_pairs):
@@ -340,11 +442,9 @@ def get_instruction_candidates(
                 operator_names[position]
                 for position in matching_positions
             }
-            if not matching_names:
-                raise ValueError(
-                    "No operator matched block "
-                    f"({block_row}, {block_column})."
-                )
+            # An empty set is the answer, not an error. A block no operator
+            # reproduces is the contradicted case, and the caller reporting on
+            # the whole layout can only see it if it survives to be counted.
             instruction_candidates[block_row, block_column] = matching_names
     return instruction_candidates
 
