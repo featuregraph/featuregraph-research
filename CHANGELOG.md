@@ -26,6 +26,19 @@ All notable changes to FeatureGraph are documented in this file. The format foll
 - Completed DOI metadata and converted the prerelease checklist into an alpha release record.
 - Consolidated repository ignore rules.
 
+## [0.1.0b1] - 2026-08-17
+
+### Added
+
+- Validated BIDMC rolling-envelope and interval construction.
+- Localized detector-discordant BIDMC episodes and their handoff records.
+- Recorded beta CI gates for the released artifact.
+
+### Changed
+
+- Published the beta as the current public release. `v0.1.0a1` remains the
+  immutable alpha, and its archived record is unchanged.
+
 ## [0.1.0a1] - 2026-07-24
 
 ### Added
@@ -51,5 +64,6 @@ All notable changes to FeatureGraph are documented in this file. The format foll
 - Plotted the smoothed reactor-temperature signal used to construct Eastman boundaries.
 - Corrected corrupted arrow and em-dash characters in the README.
 
-[Unreleased]: https://github.com/featuregraph/featuregraph/compare/v0.1.0a1...HEAD
+[Unreleased]: https://github.com/featuregraph/featuregraph/compare/v0.1.0b1...HEAD
+[0.1.0b1]: https://github.com/featuregraph/featuregraph/releases/tag/v0.1.0b1
 [0.1.0a1]: https://github.com/featuregraph/featuregraph/releases/tag/v0.1.0a1
