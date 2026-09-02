@@ -28,6 +28,48 @@ and detector-discordant handoff records.
 > The released beta and the experimental repositories have different version
 > contracts. Reproduce released results from the immutable beta tag.
 
+## Origins
+
+FeatureGraph is the current form of a question this work has returned to for a
+decade: how do you represent what a system is doing, from ordered observations
+of it, in a way another person can check?
+
+The approaches changed. The question did not.
+
+- **2016–2019** — [`smartcab`](https://github.com/habibdraft/smartcab),
+  [`rl-agents`](https://github.com/habibdraft/rl-agents): learning agents over
+  discrete states and actions.
+- **2021** — [`function-approximation`](https://github.com/habibdraft/function-approximation),
+  [`markov-processes`](https://github.com/habibdraft/markov-processes):
+  approximating continuous behavior, and transitions between states.
+- **2021–2022** — [`tmdb`](https://github.com/habibdraft/tmdb),
+  [`db-app`](https://github.com/habibdraft/db-app),
+  [`bnc`](https://github.com/habibdraft/bnc): pipelines and public APIs — how
+  observations arrive, and how they are served.
+- **2022** — [`matrix-arithmetic`](https://github.com/habibdraft/matrix-arithmetic):
+  interpreting signals sent from an upstream device to a downstream receiver.
+- **2024** — [`feature_graph`](https://github.com/habibdraft/feature_graph): the
+  first feature graph builder.
+- **2026** — [`eventql`](https://github.com/habibdraft/eventql): a declarative
+  language for signal transformations over structured numeric data.
+- **2026** — FeatureGraph: researcher-declared rules, compiled deterministically
+  into inspectable states, events, and bounded objects, with the construction
+  recorded alongside the result.
+
+What carried across was the state representation. A reinforcement learning
+agent evaluates states, and what it can learn is bounded by how well those
+states are described — but the description is usually taken as given, produced
+somewhere upstream and rarely examined.
+
+The question that kept returning was what an agent could do with layered,
+explicit information about the states it was evaluating, rather than whatever
+representation happened to be handed to it. That makes the representation
+itself the research problem, and FeatureGraph is the attempt to treat it as
+one: states declared rather than inferred, constructed deterministically, and
+inspectable independently of whatever consumes them.
+
+Earlier work is at [@habibdraft](https://github.com/habibdraft).
+
 ## Install the beta
 
 Install the immutable release:
