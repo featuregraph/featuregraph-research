@@ -2,10 +2,13 @@ name: tests
 
 on:
   push:
-    branches: [alpha/v0.1.x]
+    branches: [main, alpha/v0.1.x]
     tags: ["v*"]
   pull_request:
-    branches: [alpha/v0.1.x]
+    # main carries the successor architecture; alpha/v0.1.x carries the
+    # maintained beta line. Both hold code, so both are tested. Until now only
+    # alpha/v0.1.x was, and anything merged into main ran no tests at all.
+    branches: [main, alpha/v0.1.x]
   workflow_dispatch:
     inputs:
       reproduce:
