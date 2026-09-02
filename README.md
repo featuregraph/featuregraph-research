@@ -56,14 +56,19 @@ The approaches changed. The question did not.
   into inspectable states, events, and bounded objects, with the construction
   recorded alongside the result.
 
-Earlier work is at [@habibdraft](https://github.com/habibdraft).
+What carried across was the state representation. A reinforcement learning
+agent evaluates states, and what it can learn is bounded by how well those
+states are described — but the description is usually taken as given, produced
+somewhere upstream and rarely examined.
 
-<!-- TODO before merging: one paragraph here, in your own words, on what
-     actually carried across — why the question kept returning, and what the
-     2022 signal work made clear that the reinforcement-learning work had not.
-     The list above is a timeline; this paragraph is what makes it a story, and
-     it is the part no repository record can supply. Delete this comment when
-     the paragraph is written, or delete it and ship the timeline alone. -->
+The question that kept returning was what an agent could do with layered,
+explicit information about the states it was evaluating, rather than whatever
+representation happened to be handed to it. That makes the representation
+itself the research problem, and FeatureGraph is the attempt to treat it as
+one: states declared rather than inferred, constructed deterministically, and
+inspectable independently of whatever consumes them.
+
+Earlier work is at [@habibdraft](https://github.com/habibdraft).
 
 ## Install the beta
 
